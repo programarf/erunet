@@ -1,0 +1,9 @@
+id: title_node
+label: Title
+ui_limit: '*|full'
+properties:
+  ds_plugin: node_title
+type: copy
+type_label: 'Copy field'
+entities:
+  node: node

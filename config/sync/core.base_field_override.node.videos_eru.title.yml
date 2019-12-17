@@ -1,0 +1,18 @@
+uuid: 334d0e81-3453-473c-a7cb-d9decdef4531
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_eru
+id: node.videos_eru.title
+field_name: title
+entity_type: node
+bundle: videos_eru
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

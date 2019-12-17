@@ -1,0 +1,214 @@
+@import "typography";
+// Headings
+// -----------------------------------------------------------------------------
+h1, h2 {
+	font-family: $lato;
+}
+h3, h4, h5, h6 {
+	font-family: $poppins;
+	margin-bottom: 1em;
+}
+.home h2, .container-project h2{
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;	
+	line-height: 1.5;
+	font-size: 1.8em;
+	&::after{
+		content: "";
+	    width: 40px;
+	    height: 52px;
+	    border-bottom: 2px solid #0A6EC8;
+	    position: absolute;
+	    left: 49%;
+	}
+}
+h2{	
+	font-weight: 900;
+	text-transform: none;
+	text-align: left;
+	line-height: 1.5;
+	font-size: 1.8em;
+}
+h3, #titulo-busqueda{
+	font-size: 1.4em;
+	border-bottom: 1px #ddd solid;
+	padding: 0.3em;
+	position: relative;
+	margin-bottom: 1em;
+	line-height: 1.2 !important;
+	&::after {
+		content: "";
+		width: 40px;
+	    height: 40px;
+	    border-bottom: 2px solid #0A6EC8;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	}
+}
+.home h3 {
+	font-size: 1.75rem;
+	border-bottom: none;
+	&::after {
+		content: none;
+	}
+}
+h4{
+	color: $blue;	
+}
+h6{
+	padding-bottom: 0.3em;
+	border-bottom: 1px dashed #979797;
+	display: inline-block;
+}
+// Text
+// -----------------------------------------------------------------------------
+p {
+	font-size: 1.1em;
+}
+
+// Links & Buttons
+// -----------------------------------------------------------------------------
+a {
+
+  @include hover {
+
+  }
+}
+.btn-secondary {
+    background-color: #0a202e !important;
+	border-color: #0a202e !important;
+	padding-right: 40px;
+	padding-left: 40px;	
+	&:hover{
+		background-color: #0855B6 !important;
+		border-color: #0855B6 !important;
+		color: #fff !important;
+	}
+	a { color: #fff; }
+}
+.news__body a, .project__body a{
+	border-bottom: 1px solid $blue;
+	&:hover, &:focus{
+		text-decoration: none;
+		background-color: $blue;
+		color: #fff;
+		transition: background-color .5s;
+	}
+}
+
+// Lists
+// -----------------------------------------------------------------------------
+ol,
+ul,
+dl {
+
+}
+.page li, .news li, .project-content li {
+	font-size: 1.1em; 
+	margin-bottom: 1.1em;
+}
+.page ul li, .news ul li, .project-content ul li {
+	list-style: none;	
+	position: relative;
+}
+.page ol li, .news ol li {
+	padding-left: 5px;
+}
+// Image
+// -----------------------------------------------------------------------------
+img {
+
+}
+
+figure {
+
+}
+
+figcaption {
+
+}
+
+// Other
+// -----------------------------------------------------------------------------
+blockquote {
+	padding: 0.6em 1.5em;
+	background-color: #F2F2F2;
+	border-left: 4px solid #0A6EC8;
+}
+
+strong {
+
+}
+
+small {
+
+}
+hr {
+	border-style: dashed;
+	border-color: #979797;
+}
+body {
+	background-color: white;
+	font-family: "Poppins", Arial, Sans-serif;
+	font-size: 15px;
+}
+
+// Botones
+// -----
+
+.btn-primary {
+	cursor: pointer;
+	a{
+		color: #fff !important;
+		&:hover{ text-decoration: none; }
+	}
+}
+// Tablas
+// ------
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+caption {
+	text-align: center !important;
+	color: #596066;
+}
+th, td{
+	padding: 20px;
+}
+thead{
+	background-color: $azul-oscuro;
+	border-bottom: solid 5px $blue;
+	color: white;
+	text-align: center;
+}
+tr:nth-child(even){
+	background-color: #ddd;
+}
+// Breadcrumbs
+// ------
+.breadcrumb {
+	border-radius: 0;
+	border-bottom: 1px solid #c8c8c8;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	background: none !important;
+	margin-top: 2em;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+	@include fa-icon;
+	@extend .fas;
+	color: $azul-oscuro;
+	margin-right: 5px;
+	content: fa-content($fa-var-angle-double-right);
+	font-weight: 900;
+}
+// Forms
+// -------
+.views-exposed-form {
+	margin-bottom: 3em;
+}

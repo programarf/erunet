@@ -1,0 +1,13 @@
+uuid: 1eb04dff-ab92-4cae-bdec-777a588ab091
+langcode: es
+status: true
+dependencies:
+  module:
+    - sitemap
+third_party_settings:
+  sitemap:
+    sitemap_display_name: Transparencia
+id: transparencia
+label: Transparencia
+description: 'Categorías de la Ley de Transparencia'
+locked: false

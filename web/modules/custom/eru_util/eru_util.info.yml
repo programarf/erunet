@@ -1,0 +1,5 @@
+name: 'eru_util'
+type: module
+description: 'Utilities for ERU portal'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,22 @@
+uuid: 714f391c-036d-4fe0-996b-9262bffe2e77
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.project
+id: node.project.status
+field_name: status
+entity_type: node
+bundle: project
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

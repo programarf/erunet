@@ -1,0 +1,18 @@
+uuid: d4b62452-3bb3-4658-a459-b6e2f7280fb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Notificaciones
+type: notification_eru_
+description: 'Información relacionada con las notificaciones de adquisición de predios de los proyectos de la ERU'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

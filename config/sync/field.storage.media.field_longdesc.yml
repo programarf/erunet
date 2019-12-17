@@ -1,0 +1,21 @@
+uuid: 47c9b223-f8aa-4923-abba-ae89221a026c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_longdesc
+field_name: field_longdesc
+entity_type: media
+type: string
+settings:
+  max_length: 256
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

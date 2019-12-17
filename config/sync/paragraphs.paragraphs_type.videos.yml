@@ -1,0 +1,9 @@
+uuid: d3b858ce-45ed-49e3-8ad6-fb95becc254d
+langcode: es
+status: true
+dependencies: {  }
+id: videos
+label: Videos
+icon_uuid: null
+description: 'Videos de el sitio'
+behavior_plugins: {  }

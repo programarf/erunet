@@ -1,0 +1,18 @@
+uuid: af8b6d8c-33d4-47f1-a2b2-aca26e1775da
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_of_project
+id: taxonomy_term.type_of_project.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: type_of_project
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

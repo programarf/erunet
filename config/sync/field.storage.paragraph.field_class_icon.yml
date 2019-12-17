@@ -1,0 +1,75 @@
+uuid: 175411c0-c621-49a9-93e4-f319c77bee5c
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_class_icon
+field_name: field_class_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: ubicacion-icono
+    -
+      value: '2'
+      label: area-icono
+    -
+      value: '3'
+      label: inversion-icono
+    -
+      value: '4'
+      label: arte-icono
+    -
+      value: '5'
+      label: comercio-icono
+    -
+      value: '6'
+      label: educacion-icono
+    -
+      value: '7'
+      label: vivienda-icono
+    -
+      value: '8'
+      label: espacio-publico-icono
+    -
+      value: '9'
+      label: vias-icono
+    -
+      value: '10'
+      label: cultura-icono
+    -
+      value: '11'
+      label: parques-icono
+    -
+      value: '12'
+      label: area-construida-icono
+    -
+      value: '13'
+      label: recreacion-icono
+    -
+      value: '14'
+      label: deporte-icono
+    -
+      value: '15'
+      label: agua-icono
+    -
+      value: '16'
+      label: transporte-icono
+    -
+      value: '17'
+      label: etapas-icono
+    -
+      value: '18'
+      label: poblacion-icono
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

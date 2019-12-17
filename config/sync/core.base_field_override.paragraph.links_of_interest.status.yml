@@ -1,0 +1,22 @@
+uuid: a9611a50-6e5a-4fb0-b459-b90c523991ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.links_of_interest
+id: paragraph.links_of_interest.status
+field_name: status
+entity_type: paragraph
+bundle: links_of_interest
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

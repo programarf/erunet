@@ -1,0 +1,27 @@
+uuid: 931ed35e-8ade-4d3c-82b7-c96df7fd54d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach_file
+    - node.type.news
+  module:
+    - file
+id: node.news.field_attach_file
+field_name: field_attach_file
+entity_type: node
+bundle: news
+label: 'Documento Adjunto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf docx xsls'
+  max_filesize: 15MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

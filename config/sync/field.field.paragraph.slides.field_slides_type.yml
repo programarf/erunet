@@ -1,0 +1,21 @@
+uuid: e9297b95-27eb-4e35-b569-a62b3f0c0010
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slides_type
+    - paragraphs.paragraphs_type.slides
+  module:
+    - options
+id: paragraph.slides.field_slides_type
+field_name: field_slides_type
+entity_type: paragraph
+bundle: slides
+label: 'Tipo de Slide'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

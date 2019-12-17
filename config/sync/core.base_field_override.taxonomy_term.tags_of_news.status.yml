@@ -1,0 +1,22 @@
+uuid: 0fa5190f-acc8-4d56-a78c-74990931e405
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_of_news
+id: taxonomy_term.tags_of_news.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tags_of_news
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

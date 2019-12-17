@@ -1,0 +1,25 @@
+uuid: 5d4e836c-80fe-4833-abb9-cdedb7f6e5d5
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b0320046-326c-420a-a844-c17d029f330d'
+  module:
+    - block_content
+  theme:
+    - theme_eru
+id: terminosycondiciones_2
+theme: theme_eru
+region: navbar_branding
+weight: -10
+provider: null
+plugin: 'block_content:b0320046-326c-420a-a844-c17d029f330d'
+settings:
+  id: 'block_content:b0320046-326c-420a-a844-c17d029f330d'
+  label: 'Términos y condiciones'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

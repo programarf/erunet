@@ -1,0 +1,11 @@
+uuid: f1202cd2-b454-4b71-9667-04393d0464a6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:ab988f32-b89c-4709-aa71-fc12283dd98f'
+id: data
+label: Cifras
+icon_uuid: ab988f32-b89c-4709-aa71-fc12283dd98f
+description: ''
+behavior_plugins: {  }

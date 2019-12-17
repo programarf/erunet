@@ -1,0 +1,33 @@
+uuid: adee0132-8795-4773-93b5-1a67aa51515f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.galleries.field_img
+    - field.field.paragraph.galleries.field_title
+    - paragraphs.paragraphs_type.galleries
+  module:
+    - image
+id: paragraph.galleries.default
+targetEntityType: paragraph
+bundle: galleries
+mode: default
+content:
+  field_img:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

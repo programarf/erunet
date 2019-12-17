@@ -1,0 +1,20 @@
+uuid: 7c0b8474-a6f2-448f-a2e2-b7935c30550d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_eru
+  module:
+    - path
+id: node.videos_eru.path
+field_name: path
+entity_type: node
+bundle: videos_eru
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

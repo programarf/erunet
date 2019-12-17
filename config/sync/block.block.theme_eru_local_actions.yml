@@ -1,0 +1,20 @@
+uuid: b59f3fc2-535b-4c3b-a5e3-a061e356cb34
+langcode: en
+status: true
+dependencies:
+  theme:
+    - theme_eru
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: theme_eru_local_actions
+theme: theme_eru
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

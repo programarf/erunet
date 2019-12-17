@@ -1,0 +1,19 @@
+uuid: b3c3e3cf-3ec6-46e7-abd2-d594238deeb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.project
+id: node.project.field_location
+field_name: field_location
+entity_type: node
+bundle: project
+label: Ubicación
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

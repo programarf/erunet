@@ -1,0 +1,8 @@
+uuid: e1ea1d31-9141-472b-b045-ef14b17b88e1
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_sitio
+label: 'Fecha Sitio'
+locked: false
+pattern: 'd • F • Y'

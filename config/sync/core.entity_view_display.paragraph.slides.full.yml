@@ -1,0 +1,71 @@
+uuid: d837ba1b-cc9c-44bc-880f-8d73bb145187
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.slides.field_description
+    - field.field.paragraph.slides.field_external_link
+    - field.field.paragraph.slides.field_image
+    - field.field.paragraph.slides.field_link
+    - field.field.paragraph.slides.field_media
+    - field.field.paragraph.slides.field_slides_type
+    - field.field.paragraph.slides.field_title
+    - paragraphs.paragraphs_type.slides
+  module:
+    - link
+id: paragraph.slides.full
+targetEntityType: paragraph
+bundle: slides
+mode: full
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_external_link:
+    weight: 4
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_media: true
+  field_slides_type: true

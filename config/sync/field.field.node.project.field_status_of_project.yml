@@ -1,0 +1,21 @@
+uuid: e51182ec-422d-4971-adc0-88bfe6276ad5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status_of_project
+    - node.type.project
+  module:
+    - text
+id: node.project.field_status_of_project
+field_name: field_status_of_project
+entity_type: node
+bundle: project
+label: 'Estado actual del proyecto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

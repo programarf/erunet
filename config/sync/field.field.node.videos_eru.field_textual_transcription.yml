@@ -1,0 +1,23 @@
+uuid: 8d763141-af8e-4f10-aefe-cf94113184fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textual_transcription
+    - node.type.videos_eru
+  module:
+    - link
+id: node.videos_eru.field_textual_transcription
+field_name: field_textual_transcription
+entity_type: node
+bundle: videos_eru
+label: 'Textual Transcription'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

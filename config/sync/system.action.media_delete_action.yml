@@ -1,0 +1,13 @@
+uuid: 7af504af-3971-43ab-aa00-f9afb2f8b7ca
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: FrZy1tmuXJcOxhXlBoI1Hsnen5TT-9OCC1iolWH84go
+id: media_delete_action
+label: 'Eliminar medio'
+type: media
+plugin: 'entity:delete_action:media'
+configuration: {  }

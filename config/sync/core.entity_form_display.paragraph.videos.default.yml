@@ -1,0 +1,29 @@
+uuid: 9b88981f-e634-41d6-975c-1811ad2f81e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.videos.field_videos
+    - paragraphs.paragraphs_type.videos
+  module:
+    - paragraphs
+id: paragraph.videos.default
+targetEntityType: paragraph
+bundle: videos
+mode: default
+content:
+  field_videos:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: video
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

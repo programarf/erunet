@@ -1,0 +1,40 @@
+uuid: bd96cf31-747c-4faa-9e50-f5221b32ab9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.notification_eru_.body
+    - field.field.node.notification_eru_.field_expedition_date
+    - field.field.node.notification_eru_.field_file_download
+    - field.field.node.notification_eru_.field_project
+    - field.field.node.notification_eru_.field_url_of_pdf
+    - node.type.notification_eru_
+  module:
+    - text
+    - user
+id: node.notification_eru_.teaser
+targetEntityType: node
+bundle: notification_eru_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_expedition_date: true
+  field_file_download: true
+  field_project: true
+  field_url_of_pdf: true
+  langcode: true

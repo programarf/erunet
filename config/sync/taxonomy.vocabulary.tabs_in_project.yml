@@ -1,0 +1,8 @@
+uuid: da6b2b18-ffb4-4352-b929-0b167a48ef74
+langcode: es
+status: true
+dependencies: {  }
+name: Proyectos
+vid: tabs_in_project
+description: 'Nombres de los proyectos de la ERU'
+weight: 0

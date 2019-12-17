@@ -1,0 +1,23 @@
+uuid: 1ef31a1c-4824-4d97-aaae-adab3ac5e187
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_attach_file
+field_name: field_attach_file
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

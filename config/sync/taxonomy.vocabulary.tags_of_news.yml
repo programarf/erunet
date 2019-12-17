@@ -1,0 +1,8 @@
+uuid: 30f08ad7-724f-4fc6-896f-401dedcab0ec
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tags of news'
+vid: tags_of_news
+description: 'Tags of news '
+weight: 0

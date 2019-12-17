@@ -1,0 +1,22 @@
+uuid: e640d62e-64f3-431a-a6c6-b359141b9d19
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: the_media_eru
+label: 'The media ERU'
+type: 'canonical_entities:node'
+pattern: 'media-eru/[node:title]'
+selection_criteria:
+  569ef36c-b60d-426b-af0b-ac0e981a6444:
+    id: node_type
+    bundles:
+      in_the_medios_eru: in_the_medios_eru
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 569ef36c-b60d-426b-af0b-ac0e981a6444
+selection_logic: and
+weight: -5
+relationships: {  }

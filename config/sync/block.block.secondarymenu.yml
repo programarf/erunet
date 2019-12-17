@@ -1,0 +1,25 @@
+uuid: 0f113f2c-fd1f-4942-9842-61a044536720
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-menu
+  module:
+    - system
+  theme:
+    - theme_eru
+id: secondarymenu
+theme: theme_eru
+region: navbar_right
+weight: 1
+provider: null
+plugin: 'system_menu_block:secondary-menu'
+settings:
+  id: 'system_menu_block:secondary-menu'
+  label: 'Secondary Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 72bcd814-54ca-496a-a2db-88334dd7a2b2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: datosdecontacto
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+settings:
+  id: 'block_content:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+  label: 'Datos de Contacto'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

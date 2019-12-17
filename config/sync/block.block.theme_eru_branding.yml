@@ -1,0 +1,25 @@
+uuid: 94e65432-80ff-4c34-88ad-15cf3c0f6960
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - theme_eru
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: theme_eru_branding
+theme: theme_eru
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

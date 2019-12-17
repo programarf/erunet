@@ -1,0 +1,9 @@
+uuid: c3bd95ce-7cc0-4598-944c-2296fc2850e3
+langcode: en
+status: true
+dependencies: {  }
+id: links_of_interest
+label: 'links of interest'
+icon_uuid: null
+description: 'links of interest for project eru'
+behavior_plugins: {  }

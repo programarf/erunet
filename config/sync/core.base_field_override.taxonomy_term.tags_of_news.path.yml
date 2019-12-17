@@ -1,0 +1,20 @@
+uuid: ff28df67-cf77-4bdc-a17b-44741d400af6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_of_news
+  module:
+    - path
+id: taxonomy_term.tags_of_news.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tags_of_news
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

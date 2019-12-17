@@ -1,0 +1,9 @@
+uuid: 962c921e-4b03-426f-a18e-bb3cdf41456c
+langcode: en
+status: true
+dependencies: {  }
+id: general_data_
+label: 'Datos Generales'
+icon_uuid: null
+description: 'They are used for project information'
+behavior_plugins: {  }

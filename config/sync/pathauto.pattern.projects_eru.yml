@@ -1,0 +1,22 @@
+uuid: d73d4d90-cab0-4a13-9017-9abc37be01a9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: projects_eru
+label: 'Projects  Eru'
+type: 'canonical_entities:node'
+pattern: 'proyectos/[node:title]'
+selection_criteria:
+  c069f4d6-96ea-46ac-bf8b-976cc383ae04:
+    id: node_type
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c069f4d6-96ea-46ac-bf8b-976cc383ae04
+selection_logic: and
+weight: -5
+relationships: {  }

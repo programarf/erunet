@@ -1,0 +1,52 @@
+uuid: 34f02fee-191b-49be-a49c-f387db582609
+langcode: es
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+name: transparencia
+label: Transparencia
+group: null
+description: 'Información sobre Ley de Transparencia y Acceso a la Información'
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: "/mecanismos-para-la-atencion-al-ciudadano\r\n/mision-y-vision\r\n/procesos-y-procedimientos"
+    negate: 0
+    uuid: b16c0a93-47bc-4e77-ac1f-a3d1a90eec70
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      project: project
+    negate: 0
+    uuid: 856bd6ef-87e4-4c88-ac60-b0501944ca52
+    context_mapping:
+      node: '@node.node_route_context:node'
+reactions:
+  blocks:
+    blocks:
+      c4a7f0f7-4ef0-4b51-98f8-d3cd35bbde06:
+        id: 'system_menu_block:transparencia'
+        label: Transparencia
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        region: aside
+        weight: '0'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: ''
+        unique: 0
+        context_id: transparencia
+        uuid: c4a7f0f7-4ef0-4b51-98f8-d3cd35bbde06
+    id: blocks
+    saved: false
+    uuid: 8fc0029c-bce5-4ed4-a56e-1fae69c85e78
+    include_default_blocks: 0
+weight: 0

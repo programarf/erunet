@@ -1,0 +1,22 @@
+uuid: e59f1586-a4f7-4aca-a320-1f2df526d0ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.link_of_interest
+id: node.link_of_interest.promote
+field_name: promote
+entity_type: node
+bundle: link_of_interest
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

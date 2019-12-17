@@ -1,0 +1,29 @@
+uuid: 23eb7212-471f-4601-81af-0ef5abaf2317
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.links_of_interest.field_links
+    - paragraphs.paragraphs_type.links_of_interest
+  module:
+    - paragraphs
+id: paragraph.links_of_interest.default
+targetEntityType: paragraph
+bundle: links_of_interest
+mode: default
+content:
+  field_links:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: links
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

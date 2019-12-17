@@ -1,0 +1,9 @@
+uuid: 2abf5fac-7dc1-46c2-b1a3-01dde331b9bb
+langcode: en
+status: true
+dependencies: {  }
+id: slideshow
+label: Slideshow
+icon_uuid: null
+description: 'Slides in movement'
+behavior_plugins: {  }

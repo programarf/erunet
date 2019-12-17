@@ -1,0 +1,9 @@
+name: ERU CSV Importer
+type: module
+description: 'Import content from CSV.'
+package: CSV
+# core: '8.x'
+configure: eru_csv_importer.settings
+core: '8.x'
+project: 'ERU'
+datestamp: 1563793095

@@ -1,0 +1,111 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page">
+  <h1 class="sr-only">Sitio Web Empresa de Renovación y Desarrollo Urbano - ERU</h1>
+  {% embed '@radix/navbar/navbar.twig' with {
+    placement: 'sticky-top',
+    container: 'fluid',
+    color: 'dark',
+    utility_classes: ['bg-light menu-principal'],
+  } %}
+
+    {% block branding %}
+      {% if page.navbar_branding %}
+        {{ page.navbar_branding }}
+      {% endif %}
+    {% endblock %}
+
+    {% block left %}
+      {% if page.navbar_left %}
+        <div class="mr-auto">
+          {{ page.navbar_left }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    {% block right %}
+      {% if page.navbar_right %}
+      <div class="menu-secundario d-flex flex-row align-items-center">
+        {{ page.navbar_right }}
+      </div>
+      {% endif %}
+    {% endblock %}
+  {% endembed %}
+
+  {% if page.header %}
+      <header class="page__header mb-3" title="Región Encabezado">
+        {% if is_front %}
+          <div class="container-fluid px-0">
+            {{ page.header }}
+          </div>
+        {% else %}
+          <div class="container">
+            {{ page.header }}
+          </div>
+        {% endif %}
+      </header>
+    {% endif %}
+
+   {% if page.content %}
+      <main title="Contenido principal" id="main-content">
+        {% if is_front %}
+          <div class="page__content home">
+        {% else %}
+          <div class="page__content">
+        {% endif %}
+          <div class="container">
+            <div class="row">
+              {% if page.aside %}
+                <div class="col-md-3 col-12">
+                  <aside class="aside">
+                    {{ page.aside }}
+                  </aside>
+                </div>
+                <div class="col-md-9 col-12">
+                 {{ page.content }}
+                </div>
+                {% else %}
+                <div class="col-12">
+                   {{ page.content }}
+                </div>               
+              {% endif %}
+            </div>            
+          </div>
+        </div>
+      </main>
+    {% endif %}
+  {% if page.footer %}
+    <footer class="page__footer" {{ attributes }} title="Pie de página Misión, enlaces de interés y datos de contacto">
+      <div class="container">
+        <div class="row">
+          {{ page.footer }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if page.footer_light %}
+    <footer class="page__footer_2" {{ attributes }} title="Pie de página, redes sociales, s d q s, mapa del sitio">
+      <div class="container">
+        <div class="row">
+          {{ page.footer_light }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if page.footer_black %}
+    <footer class="page__footer_3"{{ attributes }} title="Pie de página - Términos, condiciones, logos">
+      <div class="container">
+        <div class="row">
+          {{ page.footer_black }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+
+</div>

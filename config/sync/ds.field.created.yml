@@ -1,0 +1,11 @@
+id: created
+label: created
+ui_limit: ''
+properties:
+  content:
+    value: '[node:created]'
+    format: plain_text
+type: token
+type_label: 'Token field'
+entities:
+  node: node

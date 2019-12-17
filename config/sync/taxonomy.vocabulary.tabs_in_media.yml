@@ -1,0 +1,8 @@
+uuid: 81341da1-63e0-4d53-b2a0-7dbba99108ae
+langcode: es
+status: true
+dependencies: {  }
+name: Medios
+vid: tabs_in_media
+description: 'Medios de Comunicación'
+weight: 0

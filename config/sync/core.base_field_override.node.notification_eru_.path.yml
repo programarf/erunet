@@ -1,0 +1,20 @@
+uuid: 2c56d72d-a887-4bf5-8890-028317522e8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.notification_eru_
+  module:
+    - path
+id: node.notification_eru_.path
+field_name: path
+entity_type: node
+bundle: notification_eru_
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

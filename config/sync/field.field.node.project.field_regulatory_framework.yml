@@ -1,0 +1,21 @@
+uuid: 2c48f22e-20fc-4195-bb47-f59d3f7d8e0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regulatory_framework
+    - node.type.project
+  module:
+    - text
+id: node.project.field_regulatory_framework
+field_name: field_regulatory_framework
+entity_type: node
+bundle: project
+label: 'Marco normativo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

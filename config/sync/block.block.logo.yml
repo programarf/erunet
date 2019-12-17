@@ -1,0 +1,25 @@
+uuid: f01bc7e1-1cd3-4e19-9f3a-6d0c5eae03c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:53a37fe9-8d56-4ac2-9c63-0cb7682a9680'
+  module:
+    - block_content
+  theme:
+    - theme_eru
+id: logo
+theme: theme_eru
+region: navbar_branding
+weight: -11
+provider: null
+plugin: 'block_content:53a37fe9-8d56-4ac2-9c63-0cb7682a9680'
+settings:
+  id: 'block_content:53a37fe9-8d56-4ac2-9c63-0cb7682a9680'
+  label: logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

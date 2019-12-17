@@ -1,0 +1,18 @@
+uuid: 454f36f4-77a1-4eff-8e1d-ec5a3df625eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_of_news
+id: taxonomy_term.tags_of_news.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tags_of_news
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

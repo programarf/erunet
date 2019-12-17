@@ -1,0 +1,22 @@
+uuid: 35a95fb6-ae04-496b-804f-87945a942ed2
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.data
+id: paragraph.data.status
+field_name: status
+entity_type: paragraph
+bundle: data
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,52 @@
+uuid: 4b86f1f0-7306-47bd-8eb3-137fe770e3b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_general_data
+    - paragraphs.paragraphs_type.data
+    - paragraphs.paragraphs_type.general_data_
+  module:
+    - entity_reference_revisions
+id: paragraph.general_data_.field_general_data
+field_name: field_general_data
+entity_type: paragraph
+bundle: general_data_
+label: 'Datos Generales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      data: data
+    target_bundles_drag_drop:
+      data:
+        enabled: true
+        weight: 5
+      general_data_:
+        weight: 6
+        enabled: false
+      slides:
+        weight: 7
+        enabled: false
+      slideshow:
+        weight: 8
+        enabled: false
+      links:
+        weight: 9
+        enabled: false
+      galleries:
+        weight: 10
+        enabled: false
+      links_of_interest:
+        weight: 10
+        enabled: false
+      gallery:
+        weight: 11
+        enabled: false
+field_type: entity_reference_revisions

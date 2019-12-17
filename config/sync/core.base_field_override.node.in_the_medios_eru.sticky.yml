@@ -1,0 +1,22 @@
+uuid: e788ec41-074b-49b8-b55b-8566533d61b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.in_the_medios_eru
+id: node.in_the_medios_eru.sticky
+field_name: sticky
+entity_type: node
+bundle: in_the_medios_eru
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

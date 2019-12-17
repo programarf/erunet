@@ -1,0 +1,46 @@
+uuid: eb9518f4-3790-4f8d-a2dc-cfc603929ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.link_of_interest
+    - paragraphs.paragraphs_type.links_of_interest
+  module:
+    - entity_reference_revisions
+id: node.link_of_interest.field_content
+field_name: field_content
+entity_type: node
+bundle: link_of_interest
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      links_of_interest: links_of_interest
+    target_bundles_drag_drop:
+      data:
+        weight: 7
+        enabled: false
+      general_data_:
+        weight: 8
+        enabled: false
+      links:
+        weight: 9
+        enabled: false
+      links_of_interest:
+        enabled: true
+        weight: 10
+      slides:
+        weight: 11
+        enabled: false
+      slideshow:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

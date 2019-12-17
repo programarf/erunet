@@ -1,0 +1,23 @@
+uuid: c8e47312-e71e-4651-9e5b-5fc936068e46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_of_pdf
+    - node.type.notification_eru_
+  module:
+    - link
+id: node.notification_eru_.field_url_of_pdf
+field_name: field_url_of_pdf
+entity_type: node
+bundle: notification_eru_
+label: 'Url of pdf'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,83 @@
+uuid: 473f97c5-2298-4138-b1a5-62e4455f27ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.convocatoria.body
+    - field.field.node.convocatoria.field_expedition_date
+    - field.field.node.convocatoria.field_file_download
+    - field.field.node.convocatoria.field_project
+    - field.field.node.convocatoria.field_tipo_contratacion
+    - field.field.node.convocatoria.field_url_of_pdf
+    - node.type.convocatoria
+  module:
+    - datetime
+    - file
+    - link
+    - options
+    - text
+    - user
+id: node.convocatoria.default
+targetEntityType: node
+bundle: convocatoria
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_expedition_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_file_download:
+    weight: 103
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_project:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tipo_contratacion:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_url_of_pdf:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

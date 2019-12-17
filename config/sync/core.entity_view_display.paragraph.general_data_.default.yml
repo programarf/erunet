@@ -1,0 +1,25 @@
+uuid: bbfe5363-612a-471d-b3ea-8fb4978fb46f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.general_data_.field_general_data
+    - paragraphs.paragraphs_type.general_data_
+  module:
+    - entity_reference_revisions
+id: paragraph.general_data_.default
+targetEntityType: paragraph
+bundle: general_data_
+mode: default
+content:
+  field_general_data:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

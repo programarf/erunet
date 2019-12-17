@@ -1,0 +1,88 @@
+// Page: Footer
+// -----------------------------------------------------------------------------
+footer {
+	color: #fff;
+	font-size: 0.9em;
+	p {font-size: 0.9em;}
+	a{
+		color: #fff;
+		&:hover{
+			color: #fff;
+			text-decoration: underline !important;
+		}
+	}
+	h2{
+		font-size: 1.4em;
+		font-family: $poppins;
+		font-weight: 500;
+		text-align: left;
+		margin-bottom: 1em;
+		&::after {
+			/*left: 4%;
+			border-color: #4297E3;
+			height: 40px;	*/
+			content: none;		
+		}
+	}	
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+.page__footer {	
+	background-color: #01293D;
+	.nav {
+		flex-direction: column;
+		.nav-link{
+			padding-left: 0;
+		}
+	}
+	.mision-footer, .links-footer, .contact{
+		padding-top: 1rem;
+	}
+	.links-footer{
+		background-color: #075168;
+		padding-left: 4rem;
+	}
+	.contact {
+		padding-left: 2rem;
+		ul{
+			padding-left: 2em;
+			li{
+				list-style: none;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+.page__footer_2 {
+	.social-media, .sitemap-block {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		text-align: center;
+	}
+	.social-media{	
+		padding: 1em 0;	
+		.nav .nav-item {
+  			margin-right: 3rem;
+		}
+	} 
+	background-color: #075168;
+	.sdqs-footer {
+		background-color: #01293D;
+		padding: 0.8em;
+	}
+	p{ margin: 0; }
+}
+.page__footer_3 {
+	background-color: #02161C;
+	padding: 1em;
+	p{ margin: 0; }
+	.terminos {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		text-align: center;
+	}
+}

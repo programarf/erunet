@@ -1,0 +1,20 @@
+uuid: 1c190518-44c4-442b-97d3-30e48bbdc359
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_of_news
+  module:
+    - text
+id: taxonomy_term.tags_of_news.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tags_of_news
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

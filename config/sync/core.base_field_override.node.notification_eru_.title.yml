@@ -1,0 +1,18 @@
+uuid: b4e93309-fe34-4d5b-8f47-204e9dbf76ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.notification_eru_
+id: node.notification_eru_.title
+field_name: title
+entity_type: node
+bundle: notification_eru_
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

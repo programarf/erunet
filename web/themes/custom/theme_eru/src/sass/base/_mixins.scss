@@ -1,0 +1,103 @@
+/*.menu-secundario .nav .accesibilidad{
+	position: inherit !important; 
+	border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 5px;   
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+	@extend %fa-icon;
+	@extend .fas;
+
+  	&::before {
+    	content: fa-content($fa-var-universal-access);
+    	color: #fff;
+    	margin-right: 5px;
+    	font-weight: 900;
+    	position: absolute;
+    	font-size: 1.5em;
+  	}
+}*/
+@mixin icono($var_fa, $cod_icon, $colorIco, $marginrIco, $sizeIco, $colorIcoHover, $leftIco){	
+	border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 0;
+    width: 0;
+    @extend %fa-icon;
+	@extend .#{$var_fa};
+
+  	&::before {
+    	content: fa-content($cod_icon);
+    	color: $colorIco;
+    	margin-right: $marginrIco;
+    	font-weight: 900;
+    	position: absolute;
+    	font-size: $sizeIco; 
+    	left: $leftIco;   	
+  	}
+  	&:hover::before, &:focus::before{
+  		color: $colorIcoHover;
+  	}
+}
+.menu-secundario .nav {
+	.nav-item{
+		margin-right: 3rem;
+	}
+	.accesibilidad{
+		@include icono('fas', $fa-var-universal-access, #FFF, 5px, 1.5em, #A0BF4A, 'auto');
+	}
+	.opciones{
+		@include icono('fas', $fa-var-ellipsis-v, #FFF, 5px, 1.5em, #A0BF4A, 0);
+	}	
+}
+.address-ico{
+	@include icono('fas', $fa-var-location-arrow, #FFF, 5px, 1.1em, #FFF, -8%);		
+}
+.phone-ico {
+	@include icono('fas', $fa-var-phone, #FFF, 5px, 1.1em, #FFF, -8%);		
+	vertical-align: top;
+}
+.mail-ico {
+	@include icono('fas', $fa-var-envelope, #FFF, 5px, 1.1em, #FFF, -8%);		
+}
+.horario-ico {
+	@include icono('fas', $fa-var-clock, #FFF, 5px, 1.1em, #FFF, -8%);		
+}
+.facebook-ico{	
+	@include icono('fab', $fa-var-facebook-f, #FFF, 5px, 1.5em, #A0BF4A, auto);		
+}
+.instagram-ico{
+	@include icono('fab', $fa-var-instagram, #FFF, 5px, 1.5em, #A0BF4A, auto);	
+}
+.twitter-ico{
+	@include icono('fab', $fa-var-twitter, #FFF, 5px, 1.5em, #A0BF4A, auto);	
+}
+.linkedin-ico{
+	@include icono('fab', $fa-var-linkedin-in, #FFF, 5px, 1.5em, #A0BF4A, auto);	
+}
+.youtube-ico{	
+	@include icono('fab', $fa-var-youtube, #FFF, 5px, 1.5em, #A0BF4A, auto);	
+}
+.site-map{	
+	@include icono('fas', $fa-var-sitemap, #FFF, 5px, 1.5em, #A0BF4A, 26%);	
+	&::before{
+		top: 0 !important;
+	}
+}
+.tag-ico{	
+	@include icono('fas', $fa-var-tag, $azul-oscuro, 5px, 1em, none, auto);	
+}
+.descargar-ico{	
+	@include icono('fas', $fa-var-download, $azul-oscuro, 5px, 2em, #085aa4, auto);	
+}
+.link-ico{		
+	@include icono('fas', $fa-var-external-link-alt, $azul-oscuro, 5px, 1em, #fff, auto);	
+	margin-top: 0.3em;
+}
+.icon-lists{	
+	@include icono('fas', $fa-var-check, $blue, 5px, 0.85em, none, -27px);	
+	&::before{
+		top: 5px !important;
+	}
+}

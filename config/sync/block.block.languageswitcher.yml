@@ -1,0 +1,28 @@
+uuid: de42dd28-aa17-44c5-97ba-f9829112c7fb
+langcode: en
+status: false
+dependencies:
+  module:
+    - language
+  theme:
+    - theme_eru
+id: languageswitcher
+theme: theme_eru
+region: navbar_right
+weight: 2
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility:
+  language:
+    id: language
+    langcodes:
+      es: es
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

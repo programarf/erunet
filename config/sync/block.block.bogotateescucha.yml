@@ -1,0 +1,25 @@
+uuid: a1071001-03f8-4cc8-88a4-cdbb6ae8fd58
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f8076668-d97b-4398-b45e-0dcf0c838f51'
+  module:
+    - block_content
+  theme:
+    - theme_eru
+id: bogotateescucha
+theme: theme_eru
+region: footer_light
+weight: 0
+provider: null
+plugin: 'block_content:f8076668-d97b-4398-b45e-0dcf0c838f51'
+settings:
+  id: 'block_content:f8076668-d97b-4398-b45e-0dcf0c838f51'
+  label: 'Bogota te escucha'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

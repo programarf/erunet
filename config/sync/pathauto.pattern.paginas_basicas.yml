@@ -1,0 +1,22 @@
+uuid: 4fec7f50-63eb-450e-8514-682ea50b50d3
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: paginas_basicas
+label: 'Páginas Básicas'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  3c84aa1b-052b-4380-9b79-311383b8478f:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3c84aa1b-052b-4380-9b79-311383b8478f
+selection_logic: and
+weight: -5
+relationships: {  }

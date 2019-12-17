@@ -1,0 +1,48 @@
+uuid: cb34d647-38b6-445d-8652-aaa7fcff6251
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.data.field_class
+    - field.field.paragraph.data.field_class_icon
+    - field.field.paragraph.data.field_description
+    - field.field.paragraph.data.field_title
+    - paragraphs.paragraphs_type.data
+id: paragraph.data.default
+targetEntityType: paragraph
+bundle: data
+mode: default
+content:
+  field_class:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_class_icon:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_description:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

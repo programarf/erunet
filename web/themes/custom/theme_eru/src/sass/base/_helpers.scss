@@ -1,0 +1,19 @@
+.display-none-controllers{
+  ol,a{
+    display: none;
+  }
+  #carouselButtons{
+    display: none;
+  }
+  .d-md-block{
+    display: none !important;
+  }
+}
+
+.page__footer {
+  clear: both;
+}
+/* .navbar,
+.navbar-expand-lg {
+  display: none !important;
+} */

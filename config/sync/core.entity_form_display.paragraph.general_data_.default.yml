@@ -1,0 +1,29 @@
+uuid: 89474d9a-9c53-4e59-98e3-d4e11d186a38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.general_data_.field_general_data
+    - paragraphs.paragraphs_type.general_data_
+  module:
+    - paragraphs
+id: paragraph.general_data_.default
+targetEntityType: paragraph
+bundle: general_data_
+mode: default
+content:
+  field_general_data:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

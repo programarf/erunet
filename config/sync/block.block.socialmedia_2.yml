@@ -1,0 +1,25 @@
+uuid: be502687-91b8-4388-9b4f-7c41ef17fd3a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - system
+  theme:
+    - theme_eru
+id: socialmedia_2
+theme: theme_eru
+region: navbar_branding
+weight: -9
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Social media'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

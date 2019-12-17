@@ -1,0 +1,25 @@
+uuid: 009ddf6e-2f2c-4e59-9a0c-1600e3e7ebc0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+  module:
+    - block_content
+  theme:
+    - theme_eru
+id: contactinformation
+theme: theme_eru
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+settings:
+  id: 'block_content:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+  label: 'Información de Contacto'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

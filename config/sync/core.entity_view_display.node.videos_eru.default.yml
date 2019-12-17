@@ -1,0 +1,112 @@
+uuid: f6770335-94a0-4306-b8a5-c7456b9badd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.videos_eru.body
+    - field.field.node.videos_eru.field_image_main
+    - field.field.node.videos_eru.field_tags
+    - field.field.node.videos_eru.field_textual_transcription
+    - field.field.node.videos_eru.field_url_video_yt_
+    - node.type.videos_eru
+  module:
+    - ds
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: radix_boxton
+      library: radix_layouts/radix_layouts
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      contentmain:
+        - langcode
+        - body
+        - 'dynamic_token_field:node-created'
+        - links
+        - field_image_main
+        - field_url_video_yt_
+        - field_tags
+        - addtoany
+        - field_textual_transcription
+    fields:
+      'dynamic_token_field:node-created':
+        plugin_id: 'dynamic_token_field:node-created'
+        weight: 0
+        label: above
+        formatter: default
+id: node.videos_eru.default
+targetEntityType: node
+bundle: videos_eru
+mode: default
+content:
+  addtoany:
+    weight: 3
+    region: contentmain
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    type: text_default
+    weight: 0
+    region: contentmain
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_image_main:
+    type: image
+    weight: 0
+    region: contentmain
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_tags:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: contentmain
+  field_textual_transcription:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: contentmain
+  field_url_video_yt_:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: contentmain
+  langcode:
+    type: language
+    weight: 0
+    region: contentmain
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: contentmain
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

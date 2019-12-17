@@ -1,0 +1,18 @@
+uuid: e13d09cb-9178-401d-b075-a94d0e8f6043
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.link_of_interest
+id: node.link_of_interest.created
+field_name: created
+entity_type: node
+bundle: link_of_interest
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

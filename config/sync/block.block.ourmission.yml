@@ -1,0 +1,40 @@
+uuid: f29bc1de-4314-41d2-8f75-b341946c66b4
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:2a318f74-bfd9-40b8-a0dd-7ce01d48a32e'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - theme_eru
+id: ourmission
+theme: theme_eru
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:2a318f74-bfd9-40b8-a0dd-7ce01d48a32e'
+settings:
+  id: 'block_content:2a318f74-bfd9-40b8-a0dd-7ce01d48a32e'
+  label: 'Nuestra Misión'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      in_the_medios_eru: in_the_medios_eru
+      link_of_interest: link_of_interest
+      news: news
+      notification_eru_: notification_eru_
+      page: page
+      project: project
+      videos_eru: videos_eru
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

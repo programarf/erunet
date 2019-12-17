@@ -1,0 +1,23 @@
+uuid: 2d015ad1-77f0-43d3-89a4-465b83be41ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_infografia
+    - node.type.project
+  module:
+    - link
+id: node.project.field_infografia
+field_name: field_infografia
+entity_type: node
+bundle: project
+label: Infografía
+description: 'Enlace a la infografía del proyecto'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

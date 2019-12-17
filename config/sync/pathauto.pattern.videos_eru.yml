@@ -1,0 +1,22 @@
+uuid: 898b44af-ee2b-4050-8b0b-c197ffba2f1c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: videos_eru
+label: 'Videos  Eru'
+type: 'canonical_entities:node'
+pattern: 'videos/[node:title]'
+selection_criteria:
+  cab39bdf-558d-4555-ba1b-1def33344348:
+    id: node_type
+    bundles:
+      videos_eru: videos_eru
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cab39bdf-558d-4555-ba1b-1def33344348
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Template for a field.
+ */
+#} 
+{% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes }}>
+      {% for item in items %}
+        <div{{ item.attributes }}>{{ item.content }}</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% for item in items %}
+      <div{{ attributes }}>{{ item.content }}</div>
+    {% endfor %}
+  {% endif %}
+{% else %}  
+    <h3{{ title_attributes }}>{{ label }}</h3>
+    {% if multiple %}
+    <div>
+      {% endif %}      
+      {% for item in items %}
+        <div class="btn link-proyecto"><i class="link-ico"></i>{{ item.content }}</div>      
+      {% endfor %}
+      {% if multiple %}
+    </div>
+    {% endif %}  
+{% endif %}

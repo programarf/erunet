@@ -1,0 +1,161 @@
+<?php
+
+/**
+ * @file
+ * Contains eru_content_type.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\single_datetime\AttributeHelper;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_help().
+ */
+function eru_content_type_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the eru_content_type module.
+    case 'help.page.eru_content_type':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage content types for ERU portal') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function eru_content_type_field_widget_form_alter (&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  if ($context['items']->getName() == 'field_slides') {
+    $element['subform']['field_image']['#states'] = [
+      'visible' => [
+        ':input[name="field_blocks[0][subform][field_slides][' . $element['#delta'] . '][subform][field_slides_type]"]' => [
+          'value' => 'image',
+        ],
+      ],
+    ];
+
+    $element['subform']['field_media']['#states'] = [
+      'visible' => [
+        ':input[name="field_blocks[0][subform][field_slides][' . $element['#delta'] . '][subform][field_slides_type]"]' => [
+          'value' => 'video',
+        ],
+      ],
+    ];
+  }
+}
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function eru_content_type_views_query_alter (ViewExecutable $view, QueryPluginBase $query) {
+  $exposed_input = $view->getExposedInput();
+  if (!empty($exposed_input)) {
+    foreach ($exposed_input as $key => $value) {
+      if ($key === 'created' && !empty($value)) {
+        // Traverse through the 'where' part of the query.
+        foreach ($query->where as &$condition_group) {
+          foreach ($condition_group['conditions'] as $key_condition => &$condition) {
+            if (strpos($condition['field'], '.created') !== FALSE) {
+              unset($condition_group['conditions'][$key_condition]);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function eru_content_type_views_pre_render (ViewExecutable $view) {
+  // Apply filter date in views.
+  $exposed_input = $view->getExposedInput();
+  if (!empty($exposed_input)) {
+    foreach ($exposed_input as $key => $value) {
+      if ($key === 'created') {
+        if (!empty($value)) {
+          try {
+            foreach ($view->result as $item) {
+              $exist = FALSE;
+              // Get entity date.
+              if (!empty($item->_entity) && method_exists($item->_entity, 'getCreatedTime')) {
+                $date = $item->_entity->getCreatedTime();
+                $format = \Drupal::service('date.formatter')->format($date, 'custom', 'd-m-Y');
+                if ($value === $format) {
+                  $exist = TRUE;
+                }
+              }
+              // Delete row if apply.
+              if (!$exist) {
+                unset($view->result[$item->index]);
+              }
+            }
+          }
+          catch (\Exception $e) {}
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function eru_content_type_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\views\ViewExecutable $view */
+  $view = $form_state->getStorage()['view'];
+  if ($view->preview === NULL) {
+    $filters = $view->getHandlers('filter');
+    // Use default template from helper.
+    $attributes = AttributeHelper::defaultWidget();
+    $active = FALSE;
+    foreach ($filters as $id => $filter) {
+      // Only take filters which are exposed and date based.
+      if ($filter['exposed'] && ($filter['plugin_id'] === 'date' || $filter['plugin_id'] === 'search_api_date')) {
+        // Only handle date based value, no offset exposed dates.
+        if ($filter['value']['type'] === 'date') {
+          $active = TRUE;
+          $field_name = $filter['id'];
+
+          // Based on selected filters attach attributes on proper place.
+          switch ($filter['operator']) {
+            case 'between':
+            case 'not between':
+              $form[$field_name]['min']['#attributes'] = $attributes;
+              $form[$field_name]['max']['#attributes'] = $attributes;
+
+              // Adjust titles.
+              $field_title = $form[$field_name]['min']['#title'];
+              $form[$field_name]['min']['#title'] = $field_title . ' ( ' . t('From') . ' )';
+              $form[$field_name]['max']['#title'] = $field_title . ' ( ' . t('To') . ' )';
+
+              // On between filters when end value is empty, sometimes filters
+              // are not working. So set end value.
+              $input = $form_state->getUserInput();
+              if (!empty($input[$field_name]['min']) && empty($input[$field_name]['max'])) {
+                $timestamp = strtotime($input[$field_name]['min']) + 86400;
+                $input[$field_name]['max'] = date('Y-m-d h:i:s', $timestamp);
+                $form_state->setUserInput($input);
+              }
+              break;
+
+            default:
+              $attributes['data-single-date-time'] = 'date';
+              $form[$field_name]['#attributes'] = $attributes;
+          }
+        }
+      }
+    }
+    // If we have found filters. Attach library.
+    if ($active) {
+      $form['#attached']['library'][] = 'eru_util/eru_util.date_picker';
+    }
+  }
+}

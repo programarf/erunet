@@ -1,0 +1,29 @@
+uuid: 8148bb67-9fa2-454f-99bc-e58f77ff97a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project
+    - node.type.notification_eru_
+    - taxonomy.vocabulary.tabs_in_project
+id: node.notification_eru_.field_project
+field_name: field_project
+entity_type: node
+bundle: notification_eru_
+label: Proyecto
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tabs_in_project: tabs_in_project
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

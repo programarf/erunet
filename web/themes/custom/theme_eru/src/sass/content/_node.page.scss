@@ -1,0 +1,96 @@
+/* @import "fonts/fontawesome/scss/fontawesome.scss";
+@import "fonts/fontawesome/scss/solid.scss";
+@import "fonts/fontawesome/scss/regular.scss";
+@import "fonts/fontawesome/scss/brands.scss"; */
+// Todo se importa del principal
+
+// Page
+// -----------------------------------------------------------------------------
+.project__field-videos #eru-slide .carousel-caption {
+	background-color: #000 !important;
+	padding: 13px !important;
+	opacity: 0.8 !important;
+	padding-bottom: 70px !important;
+	margin-bottom: 0 !important;
+}
+.news, .container-project{
+	#eru-slide {
+		.carousel-caption {
+			width: 80%;
+			font-size: 1.3em;
+			margin: 20px 0;
+			background-color: #000;
+			opacity: 0.8;
+			padding-bottom: 47px;
+			margin: 0;
+			padding-left: 24px
+		}
+		.controles {
+			left: 10%;
+			bottom: 12%;
+		}
+	}
+	.news__field-gallery .field__label{
+		display: none;
+	}	
+}
+.badge{
+	color: $azul-oscuro;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	margin-left: 1em;	
+	&:nth-child(2n) {
+		margin-left: 2em;
+	}	
+}
+.tag_alcance {
+    background: #EFEFEF;
+    padding: 0.35em;
+    display: inline-block;
+    margin: 0.4em;	
+    a{
+    	color: #3C3C3B;
+    	&:hover {
+    		text-decoration: none !important;
+    		color: #fff !important; 
+    	}
+    }
+    &:hover {
+    	background-color: #0A6EC8;
+    }
+}
+.tags{
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5em;	
+}
+.link-proyecto {
+	display: flex;
+	border: 1px dashed #0A6EC8;
+	margin-bottom: 1em;	
+	&:hover {
+		background-color: $azul-oscuro !important;
+		color: #fff !important;
+		cursor: pointer;
+	}
+	a{
+		margin-left: 1.7em;
+		text-align: left !important;
+		&:hover {
+			text-decoration: none;
+			color: #fff !important;
+		}
+	}
+}
+a.a2a_button_facebook:hover .a2a_s_facebook{
+	fill: #fff !important;
+    background-color: #3b5998 !important;
+    opacity: 1 !important;
+}
+a.a2a_button_twitter:hover .a2a_s_twitter{
+	fill: #fff !important;
+    background-color: #1da1f2 !important;
+    opacity: 1 !important;
+}
+.a2a_button_twitter span, .a2a_button_facebook span {padding: 3px !important;}
+.news__field-fecha-de-publicacion {margin-bottom: 2em; }

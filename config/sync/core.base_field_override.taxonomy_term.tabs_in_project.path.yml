@@ -1,0 +1,20 @@
+uuid: 463c41fe-d45a-4882-92c6-5fa4c35be07f
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tabs_in_project
+  module:
+    - path
+id: taxonomy_term.tabs_in_project.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tabs_in_project
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

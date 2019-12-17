@@ -1,0 +1,50 @@
+uuid: b0b776ba-72eb-40a2-8806-a4c6254f747f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.data.field_class
+    - field.field.paragraph.data.field_class_icon
+    - field.field.paragraph.data.field_description
+    - field.field.paragraph.data.field_title
+    - paragraphs.paragraphs_type.data
+  module:
+    - entity_class_formatter
+    - options
+id: paragraph.data.default
+targetEntityType: paragraph
+bundle: data
+mode: default
+content:
+  field_class:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_class_icon:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_description:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  addtoany: true

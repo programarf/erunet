@@ -1,0 +1,22 @@
+uuid: aec8d238-7da8-44fd-b10e-7b037faa4157
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slides
+id: paragraph.slides.status
+field_name: status
+entity_type: paragraph
+bundle: slides
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

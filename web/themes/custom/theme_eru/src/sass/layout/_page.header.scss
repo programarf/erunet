@@ -1,0 +1,129 @@
+// Page: Top Header
+// -----------------------------------------------------------------------------
+.menu-principal {
+	background-color: $bk !important;
+	background-blend-mode: multiply;
+	opacity: 0.9;
+	.block--theme-eru-main-menu a.nav-link, a.language-link, .logo a{
+		color: #fff !important;		
+		text-transform: uppercase;
+		&:focus { outline: 2px dotted #FFF !important; }
+	}
+	.logo {margin-right: 30px;}
+	.navbar-nav {		
+		.nav-item {
+			margin-right: 1rem !important;
+			&::after{
+				content: '';
+				display: block;
+				width: 0;
+				height: 2px;
+				background: #fff;
+				transition: width .3s;
+				border: none;
+			}
+			&:hover::after{width: 100%;}
+		}
+	}
+	.dropdown-menu {
+		font-size: 0.9rem !important;
+		-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    	box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    	margin-top: 5px;
+    	a{
+    		padding: 0.7rem 1rem !important;
+    		white-space: normal;
+    	}
+    	a:hover, a:focus{
+    		color: #fff;
+    		text-decoration: none;
+    		background-color: $bk;
+    	}
+    	&::before {
+    		content: '';
+    		width: 0;
+    		height: 0;
+    		border-top: 0 solid transparent;
+    		border-left: 0.5em solid transparent;
+    		border-right: 0.5em solid transparent;
+    		margin: 0 auto;
+    		border-bottom: 0.5em solid #FFF;
+    		position: absolute;
+    		top: -7px;
+    		left: 45%;
+    	}
+	}	
+}
+.menu-secundario .dropdown-menu {
+	top: 150% !important;
+	left: -80px !important;
+}
+// Page: Header
+// -----------------------------------------------------------------------------
+//.page__header {
+	.landing-page {
+		h2{
+			border: 0;
+			clip: rect(0, 0, 0, 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+		span {display: none;}
+	}	
+	#eru-slide {
+		img {
+			width: 100%;
+		}
+		.carousel-caption {
+			left: 7% !important;
+			text-align: left !important;
+			width: 35%;
+			bottom: 12%;
+			h3 {
+				font-size: 1.7em !important; 
+				font-family: $poppins; 
+				font-weight: 600;
+				border-bottom: none;
+				padding: 0;
+				&::after{ content:none; }
+			}
+			p {line-height: 1.2}
+			p, a {
+				font-size: 1.2em;
+			}
+		}
+		.controles {
+			display: flex;
+		    align-items: center;
+		    position: absolute;
+		    left: 16%;
+		    bottom: 14%;
+		    z-index: 10;
+		    i{
+		    	font-size: 2em;
+		    	color: #fff;
+		    	&:hover{
+		    		color: #0A6EC8 !important;
+		    	}
+		    }
+		    .carousel-control-prev, .carousel-control-next{
+		    	opacity: 1 !important;
+		    	cursor: pointer;
+		    	margin: 10px;
+		    	display: contents;		    	
+		    }
+		    .btn{display: none;}
+		    .active {display: block; padding-top: 0.5rem;}
+		}
+	}
+//}
+// Buscador
+// -----------------------------------------------------------------------------
+
+#search-block-form > div {
+	justify-content: center;
+}

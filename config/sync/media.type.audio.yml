@@ -1,0 +1,15 @@
+uuid: 26721257-7961-44a8-a798-c9e08a9c95ce
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RQ75tMARZvKiI0hge9SKZpZFi-dOzZyq0nlouHHBeLM
+id: audio
+label: Audio
+description: 'Un archivo de audio alojado localmente.'
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_audio_file
+field_map: {  }

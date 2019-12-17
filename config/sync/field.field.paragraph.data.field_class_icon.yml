@@ -1,0 +1,21 @@
+uuid: d2467694-e13e-4d68-b697-d1f12d7705dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class_icon
+    - paragraphs.paragraphs_type.data
+  module:
+    - options
+id: paragraph.data.field_class_icon
+field_name: field_class_icon
+entity_type: paragraph
+bundle: data
+label: 'Clase ícono'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

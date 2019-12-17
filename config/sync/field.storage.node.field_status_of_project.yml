@@ -1,0 +1,19 @@
+uuid: 4f5dd6d0-0e3a-4811-8680-9735efeb72ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_status_of_project
+field_name: field_status_of_project
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

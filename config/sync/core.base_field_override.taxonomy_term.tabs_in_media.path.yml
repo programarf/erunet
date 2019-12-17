@@ -1,0 +1,20 @@
+uuid: 250bc0b1-8943-4100-9dcc-268bc67fe0f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tabs_in_media
+  module:
+    - path
+id: taxonomy_term.tabs_in_media.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tabs_in_media
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

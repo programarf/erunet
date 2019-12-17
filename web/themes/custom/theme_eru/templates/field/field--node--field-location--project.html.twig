@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Template for a field.
+ */
+#} 
+{% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes }}>
+      {% for item in items %}
+        <div{{ item.attributes }}>{{ item.content }}</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% for item in items %}
+      <div{{ attributes }}>{{ item.content }}</div>
+    {% endfor %}
+  {% endif %}
+{% else %}
+  <div class="project__field-location">
+    <h3{{ title_attributes }}>{{ label }}</h3>
+    {% if multiple %}
+    <div>
+      {% endif %}
+      <div class="dato-general">
+      <i class="location-icon"></i>
+      {% for item in items %}
+        <div class="cifra"><span>{{ item.content }}</span></div>
+      </div>
+      {% endfor %}
+      {% if multiple %}
+    </div>
+    {% endif %}
+  </div>
+{% endif %}

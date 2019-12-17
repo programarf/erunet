@@ -1,0 +1,46 @@
+uuid: 9f6a6c09-3e9b-4a49-b94c-7b399b0fa140
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_links
+    - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.links_of_interest
+  module:
+    - entity_reference_revisions
+id: paragraph.links_of_interest.field_links
+field_name: field_links
+entity_type: paragraph
+bundle: links_of_interest
+label: links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      links: links
+    target_bundles_drag_drop:
+      links:
+        enabled: true
+        weight: 7
+      data:
+        weight: 8
+        enabled: false
+      general_data_:
+        weight: 9
+        enabled: false
+      links_of_interest:
+        weight: 10
+        enabled: false
+      slides:
+        weight: 11
+        enabled: false
+      slideshow:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,54 @@
+{#
+/**
+ * @file
+ * Template for Radix Brenham.
+ *
+ * Variables:
+ * - $css_id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ * panel of the layout. This layout supports the following sections:
+ */
+#}
+{%
+    set container_classes = [
+    'panel-display',
+    'brenham',
+    'clearfix'
+]
+%}
+{% if classes %}
+    {% set container_classes = container_classes|merge(classes) %}
+{% endif %}
+{% if class %}
+    {% set container_classes = container_classes|merge(class) %}
+{% endif %}
+
+<div {{ attributes.addClass(container_classes) }}{% if css_id %}{{ css_id }}{% endif %}>
+
+  <div class="container-fluid news">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-header panel-panel">
+        <div {{ region_attributes.header.addClass('panel-panel-inner') }}>
+          {{ content.header }}        
+        </div>
+      </div>
+    </div>
+
+  <div class="container news">
+    <div class="row">
+      <div class="col-md-3 col-12 radix-layouts-sidebar panel-panel">
+        <div {{ region_attributes.sidebar.addClass('panel-panel-inner date-social') }}>
+          <div class="item_data"><b>Fecha de publicación:  </b></div>
+          <!-- <div class="item_data">{{ node.field_node_created.value }}</div>  --> 
+          {{ content.sidebar }}              
+        </div>
+      </div>
+      <div class="col-md-9 col-12   radix-layouts-content panel-panel">
+        <div {{ region_attributes.contentmain.addClass('panel-panel-inner') }}>
+          {{ content.contentmain }}
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div><!-- /.brenham -->

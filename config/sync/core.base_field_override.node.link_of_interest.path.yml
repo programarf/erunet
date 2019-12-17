@@ -1,0 +1,20 @@
+uuid: d3407c6e-7c72-43e5-8d25-0843cccd03dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.link_of_interest
+  module:
+    - path
+id: node.link_of_interest.path
+field_name: path
+entity_type: node
+bundle: link_of_interest
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,24 @@
+uuid: 1e423c51-435b-44ac-92b6-3150e7f8d8e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_galleries_img
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_galleries_img:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

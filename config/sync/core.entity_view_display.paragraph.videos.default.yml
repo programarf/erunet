@@ -1,0 +1,36 @@
+uuid: f9568014-dcf0-4b5d-9ebd-3d0c45fd50ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.videos.field_videos
+    - paragraphs.paragraphs_type.videos
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_formatter_class
+id: paragraph.videos.default
+targetEntityType: paragraph
+bundle: videos
+mode: default
+content:
+  field_videos:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: content
+hidden: {  }

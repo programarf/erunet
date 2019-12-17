@@ -1,0 +1,30 @@
+uuid: 6b305825-6633-4c32-9448-bc5bb01bb267
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.transparencia
+  module:
+    - system
+  theme:
+    - theme_eru
+id: transparencia
+theme: theme_eru
+region: content
+weight: 13
+provider: null
+plugin: 'system_menu_block:transparencia'
+settings:
+  id: 'system_menu_block:transparencia'
+  label: Transparencia
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /transparencia
+    negate: false
+    context_mapping: {  }

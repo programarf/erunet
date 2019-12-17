@@ -1,0 +1,25 @@
+uuid: aa378a73-650b-4536-9a7f-b0463d7de8f0
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c0411731-63bc-44b5-8dd8-72d9190461db'
+  module:
+    - block_content
+  theme:
+    - theme_eru
+id: mapadelsitio
+theme: theme_eru
+region: footer_light
+weight: 0
+provider: null
+plugin: 'block_content:c0411731-63bc-44b5-8dd8-72d9190461db'
+settings:
+  id: 'block_content:c0411731-63bc-44b5-8dd8-72d9190461db'
+  label: 'mapa del sitio'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,5 @@
+eru_csv_importer.form:
+  title: CSV importer
+  description: 'Import data from CSV'
+  parent: system.admin_config_development
+  route_name: eru_csv_importer.form

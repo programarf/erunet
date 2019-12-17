@@ -1,0 +1,22 @@
+uuid: 4d63fd2c-7d10-46f6-988c-695bcf4902d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tabs_in_media
+id: taxonomy_term.tabs_in_media.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tabs_in_media
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

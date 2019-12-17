@@ -1,0 +1,22 @@
+uuid: 8cdc091e-2cef-4be9-956a-f4b9d91aa16b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_eru
+id: node.videos_eru.status
+field_name: status
+entity_type: node
+bundle: videos_eru
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

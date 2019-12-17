@@ -1,0 +1,19 @@
+uuid: 6c0615e7-56d8-4c47-bb5c-d2b2c4743518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class
+    - paragraphs.paragraphs_type.data
+id: paragraph.data.field_class
+field_name: field_class
+entity_type: paragraph
+bundle: data
+label: 'Icono - Clase CSS'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

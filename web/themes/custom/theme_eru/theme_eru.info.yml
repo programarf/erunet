@@ -1,0 +1,45 @@
+name: theme Eru
+description: subtheme of Radix for eru
+screenshot: screenshot.png
+# core: 8.x
+# version: VERSION
+engine: twig
+type: theme
+base theme: radix
+#hidden: true
+
+regions:
+  navbar_branding: Navbar branding
+  navbar_left:  Navbar left
+  navbar_right: Navbar right
+  header: Header
+  content: Content
+  aside: Aside
+  page_bottom: Page bottom
+  footer: Footer main
+  footer_light: Footer light
+  footer_black: Footer black
+
+
+libraries:
+  - radix/style
+  - theme_eru/style
+  - theme_eru/poppins
+  - theme_eru/lato
+
+libraries-override:
+  radix/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/eru_radix1.style.css
+
+component-libraries:
+  theme_eru:
+    paths:
+      - ./src/components
+
+# Information added by Drupal.org packaging script on 2019-03-25
+version: '8.x-4.1'
+core: '8.x'
+project: 'radix'
+datestamp: 1553516919

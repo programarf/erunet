@@ -1,0 +1,4 @@
+message:
+  value: 'hello work'
+  format: restricted_html
+page_title: 'Mapa del sitio'

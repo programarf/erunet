@@ -1,0 +1,14 @@
+uuid: 4f882654-0e81-4c72-8114-c0f004c2feb3
+name: 'Empresa de Renovación y Desarrollo Urbano de Bogotá'
+mail: atencionalciudadano@eru.gov.co
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

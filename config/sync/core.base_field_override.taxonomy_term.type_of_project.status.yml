@@ -1,0 +1,22 @@
+uuid: 65f60955-8502-4727-bbcb-40715995136a
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_of_project
+id: taxonomy_term.type_of_project.status
+field_name: status
+entity_type: taxonomy_term
+bundle: type_of_project
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

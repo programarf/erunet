@@ -1,0 +1,52 @@
+uuid: a4314715-f6ba-4021-ac58-fb3441cb6e76
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_galleries_img
+    - paragraphs.paragraphs_type.galleries
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery.field_galleries_img
+field_name: field_galleries_img
+entity_type: paragraph
+bundle: gallery
+label: Galleries
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      galleries: galleries
+    target_bundles_drag_drop:
+      gallery:
+        weight: 9
+        enabled: false
+      data:
+        weight: 10
+        enabled: false
+      galleries:
+        enabled: true
+        weight: 11
+      general_data_:
+        weight: 12
+        enabled: false
+      links:
+        weight: 13
+        enabled: false
+      links_of_interest:
+        weight: 14
+        enabled: false
+      slides:
+        weight: 15
+        enabled: false
+      slideshow:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

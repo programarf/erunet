@@ -1,0 +1,23 @@
+uuid: 73590635-08b1-4529-aac1-bcd996997cd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_externa
+    - node.type.project
+id: node.project.field_externa
+field_name: field_externa
+entity_type: node
+bundle: project
+label: 'External link'
+description: 'Content of  regulatory'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'TRUE'
+  off_label: 'FALSE'
+field_type: boolean

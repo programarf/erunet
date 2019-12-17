@@ -1,0 +1,64 @@
+uuid: bc85d604-d4c5-4026-9c41-1c0282a49acd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.in_the_medios_eru.body
+    - field.field.node.in_the_medios_eru.field_image_main
+    - field.field.node.in_the_medios_eru.field_tabs_media
+    - field.field.node.in_the_medios_eru.field_url_of_the_publication
+    - node.type.in_the_medios_eru
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.in_the_medios_eru.default
+targetEntityType: node
+bundle: in_the_medios_eru
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_main:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_tabs_media:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_url_of_the_publication:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

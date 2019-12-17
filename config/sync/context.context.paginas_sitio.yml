@@ -1,0 +1,186 @@
+uuid: 46f3d627-8155-4614-9c6d-1ea59b1a46aa
+langcode: es
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+name: paginas_sitio
+label: 'Páginas Sitio'
+group: null
+description: 'Bloques para otras páginas diferentes al Home'
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      in_the_medios_eru: in_the_medios_eru
+      news: news
+      notification_eru_: notification_eru_
+      page: page
+      project: project
+      videos_eru: videos_eru
+    negate: 0
+    uuid: 28f19327-a877-473b-a181-225778495fed
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/noticias\r\n/proyectos\r\n/busqueda"
+    negate: 0
+    uuid: dcd7bc35-1ee4-4c3b-9dc0-578e2e15902f
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      649ff948-1872-4bcd-9f83-ed6988239d7d:
+        id: 'block_content:2a318f74-bfd9-40b8-a0dd-7ce01d48a32e'
+        label: 'Nuestra Misión'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: footer
+        weight: '1'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-lg-4 col-md-4 col-sm-12 mision-footer'
+        unique: 0
+        context_id: paginas_sitio
+        uuid: 649ff948-1872-4bcd-9f83-ed6988239d7d
+      6ff1801c-7108-44dd-9cf0-51238606d5c2:
+        id: 'system_menu_block:social-media'
+        label: 'Redes Sociales Footer'
+        provider: system
+        label_display: 0
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        region: footer_light
+        weight: '1'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-4 menu-secundario'
+        unique: 0
+        context_id: paginas_sitio
+        uuid: 6ff1801c-7108-44dd-9cf0-51238606d5c2
+      f95707f4-029f-40b0-a8b1-9bb0772c1a01:
+        id: 'block_content:f8076668-d97b-4398-b45e-0dcf0c838f51'
+        label: 'Bogota te escucha'
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: footer_light
+        weight: '2'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-4 sdqs-footer'
+        unique: 0
+        context_id: paginas_sitio
+        uuid: f95707f4-029f-40b0-a8b1-9bb0772c1a01
+      509a8192-32e5-4b7c-8cc3-ae7dcdbd517a:
+        id: 'block_content:c0411731-63bc-44b5-8dd8-72d9190461db'
+        label: 'mapa del sitio'
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: footer_light
+        weight: '3'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-4 sitemap-block'
+        unique: 0
+        context_id: paginas_sitio
+        uuid: 509a8192-32e5-4b7c-8cc3-ae7dcdbd517a
+      1bf7456e-7838-4db6-949e-08ae406f1ba6:
+        id: 'block_content:b0320046-326c-420a-a844-c17d029f330d'
+        label: 'Términos y condiciones'
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: footer_black
+        weight: '0'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: col-4
+        unique: 0
+        context_id: paginas_sitio
+        uuid: 1bf7456e-7838-4db6-949e-08ae406f1ba6
+      7a15e05e-111c-4f16-9310-ad3db519b2b1:
+        id: 'block_content:46de56c7-80ed-4561-967a-e02f33c5e657'
+        label: 'Empresa de Renovacion y desarrollo urbano '
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: footer_black
+        weight: '1'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: col-4
+        unique: 0
+        context_id: paginas_sitio
+        uuid: 7a15e05e-111c-4f16-9310-ad3db519b2b1
+      cc1f7b0b-c6f2-4a99-bb50-a4e928837588:
+        id: 'block_content:b13af210-d449-4f7a-b4c7-136186f3d641'
+        label: Logos
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: footer_black
+        weight: '2'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: col-4
+        unique: 0
+        context_id: paginas_sitio
+        uuid: cc1f7b0b-c6f2-4a99-bb50-a4e928837588
+      3fbb4dce-3d68-4ab9-821e-1046277d3489:
+        id: 'system_menu_block:footer'
+        label: 'Enlaces de Interés'
+        provider: system
+        label_display: visible
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        region: footer
+        weight: '2'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-md-4 col-lg-4 col-sm-12 links-footer'
+        unique: 0
+        context_id: paginas_sitio
+        uuid: 3fbb4dce-3d68-4ab9-821e-1046277d3489
+      b0e5db6d-5374-4d5b-b65f-42549ea43955:
+        id: 'block_content:6c3f4fcd-5720-49d0-a0ec-31598138d5ed'
+        label: 'Datos de Contacto'
+        provider: block_content
+        label_display: visible
+        status: true
+        info: ''
+        view_mode: full
+        region: footer
+        weight: '3'
+        context_mapping: {  }
+        theme: theme_eru
+        css_class: 'col-md-4 col-lg-4 col-sm-12'
+        unique: 0
+        context_id: paginas_sitio
+        uuid: b0e5db6d-5374-4d5b-b65f-42549ea43955
+    id: blocks
+    saved: false
+    uuid: b9aa694d-6966-4806-aaec-1b88e34faeeb
+    include_default_blocks: 1
+weight: 0

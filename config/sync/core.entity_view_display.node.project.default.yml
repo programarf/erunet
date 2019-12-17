@@ -1,0 +1,217 @@
+uuid: 7afef4f3-7f90-47e7-8b52-0bf8a77de3d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - field.field.node.project.field_benefits_of_project
+    - field.field.node.project.field_externa
+    - field.field.node.project.field_external_link
+    - field.field.node.project.field_gallery
+    - field.field.node.project.field_general_data
+    - field.field.node.project.field_image
+    - field.field.node.project.field_image_evento_hover
+    - field.field.node.project.field_infografia
+    - field.field.node.project.field_labels
+    - field.field.node.project.field_links_of_interest
+    - field.field.node.project.field_location
+    - field.field.node.project.field_regulatory_framework
+    - field.field.node.project.field_scope_of_project
+    - field.field.node.project.field_status_of_project
+    - field.field.node.project.field_type_of_project
+    - field.field.node.project.field_videos
+    - node.type.project
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_formatter_class
+    - link
+    - text
+    - user
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  addtoany:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    type: text_default
+    weight: 18
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_benefits_of_project:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_externa:
+    weight: 15
+    label: hidden
+    settings:
+      format: default
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_external_link:
+    weight: 14
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_gallery:
+    weight: 16
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_general_data:
+    type: entity_reference_revisions_entity_view
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_infografia:
+    weight: 13
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: 'btn btn-secondary'
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: link
+    region: content
+  field_labels:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_links_of_interest:
+    type: link
+    weight: 6
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_location:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: '<h4>'
+            lb-col: false
+            classes: {  }
+    type: string
+    region: content
+  field_regulatory_framework:
+    type: text_default
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_scope_of_project:
+    type: text_default
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_status_of_project:
+    type: text_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_type_of_project:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_videos:
+    type: entity_reference_revisions_entity_view
+    weight: 17
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image: true
+  field_image_evento_hover: true
+  langcode: true

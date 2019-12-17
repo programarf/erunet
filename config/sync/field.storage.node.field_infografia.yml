@@ -1,0 +1,19 @@
+uuid: 681c3d21-364e-4ea6-86e6-38d165c9b716
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_infografia
+field_name: field_infografia
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

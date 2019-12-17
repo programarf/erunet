@@ -1,0 +1,19 @@
+uuid: 595c1183-84a0-4eb4-954f-5a1f6926a419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.slides
+id: paragraph.slides.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: slides
+label: Descripción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

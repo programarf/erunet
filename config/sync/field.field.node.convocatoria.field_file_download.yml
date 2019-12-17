@@ -1,0 +1,27 @@
+uuid: 9d51e631-98fd-4c4f-a7b6-1534264e258a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_download
+    - node.type.convocatoria
+  module:
+    - file
+id: node.convocatoria.field_file_download
+field_name: field_file_download
+entity_type: node
+bundle: convocatoria
+label: 'Documento Adjunto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf docx'
+  max_filesize: '5 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

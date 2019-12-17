@@ -1,0 +1,23 @@
+eru_util.slide:
+  js:
+    js/slide.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+
+eru_util.date_picker:
+  remote: https://github.com/xdan/datetimepicker
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    /libraries/datetimepicker/build/jquery.datetimepicker.full.js: {}
+    js/eru_date_picker.js: {}
+  css:
+    component:
+      /libraries/datetimepicker/build/jquery.datetimepicker.min.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

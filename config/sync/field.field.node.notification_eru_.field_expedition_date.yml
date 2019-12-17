@@ -1,0 +1,21 @@
+uuid: e5670053-9dc9-4c0a-b3c2-9439887154a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expedition_date
+    - node.type.notification_eru_
+  module:
+    - datetime
+id: node.notification_eru_.field_expedition_date
+field_name: field_expedition_date
+entity_type: node
+bundle: notification_eru_
+label: 'Fecha de Expedición'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

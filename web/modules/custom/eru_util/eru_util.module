@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains eru_util.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function eru_util_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the eru_util module.
+    case 'help.page.eru_util':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Utilities for ERU portal') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function eru_util_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+
+  if ($paragraph->getType() == 'slideshow' || $paragraph->getType() == 'gallery'||$paragraph->getType() == 'videos') {
+    $variables['#attached']['library'][] = 'eru_util/eru_util.slide';
+  }
+
+}

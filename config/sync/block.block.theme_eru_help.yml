@@ -1,0 +1,22 @@
+uuid: c2a17b3f-5cc3-42d9-9e7f-76ebb27bc1f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - theme_eru
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: theme_eru_help
+theme: theme_eru
+region: content
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

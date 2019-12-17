@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      title: Projects
+      header:
+        area:
+          content:
+            value: "<h2 class=\"text-center\">Projects eru&nbsp;</h2>\r\n\r\n<p class=\"text-center\">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>\r\n"
+            format: full_html
+  block_1:
+    display_options:
+      use_more_text: 'All the projects'

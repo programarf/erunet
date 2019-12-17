@@ -1,0 +1,23 @@
+uuid: 34264a8c-f572-468b-8b5e-7efd33de2050
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_links_of_interest
+    - node.type.project
+  module:
+    - link
+id: node.project.field_links_of_interest
+field_name: field_links_of_interest
+entity_type: node
+bundle: project
+label: 'Enlaces de Interés'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,18 @@
+uuid: ad51374b-af17-4d88-b4fd-dc5af709fc30
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.in_the_medios_eru
+id: node.in_the_medios_eru.title
+field_name: title
+entity_type: node
+bundle: in_the_medios_eru
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

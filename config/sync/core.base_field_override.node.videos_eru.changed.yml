@@ -1,0 +1,18 @@
+uuid: bd2e71d9-cfa6-4544-a844-efe569498856
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_eru
+id: node.videos_eru.changed
+field_name: changed
+entity_type: node
+bundle: videos_eru
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

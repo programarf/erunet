@@ -1,0 +1,46 @@
+uuid: 07322b60-e9f3-4689-9f24-1be06234ad2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.link_of_interest.body
+    - field.field.node.link_of_interest.field_content
+    - node.type.link_of_interest
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_formatter_class
+    - user
+id: node.link_of_interest.default
+targetEntityType: node
+bundle: link_of_interest
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  langcode: true

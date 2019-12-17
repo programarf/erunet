@@ -1,0 +1,22 @@
+uuid: 518c2dae-1f0c-49f0-b298-a9d4801b7024
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: link_of_interest_eru
+label: 'link of interest Eru'
+type: 'canonical_entities:node'
+pattern: 'link-de-interes/[node:title]'
+selection_criteria:
+  5711e29b-4d2f-425d-b51a-86b53b885937:
+    id: node_type
+    bundles:
+      link_of_interest: link_of_interest
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5711e29b-4d2f-425d-b51a-86b53b885937
+selection_logic: and
+weight: -5
+relationships: {  }

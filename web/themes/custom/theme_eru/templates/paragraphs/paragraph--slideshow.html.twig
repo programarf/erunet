@@ -1,0 +1,125 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *   - paragraph.id(): The paragraph ID.
+ *   - paragraph.bundle(): The type of the paragraph, for example, "image" or "text".
+ *   - paragraph.getOwnerId(): The user ID of the paragraph author.
+ *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
+ *   and methods for the paragraph object.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    <div id="eru-slide" class="carousel slide" {#data-ride="carousel"#}>
+      <ol class="carousel-indicators">
+      {% for key, item in content.field_slides %}
+          {% if key matches '/^\\d+$/' %}
+          <li data-target="#eru-slide" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
+        {% endif %}
+      {% endfor %}
+      </ol>
+      <div class="carousel-inner">
+        {% for key, item in content.field_slides %}
+          {% if key matches '/^\\d+$/' %}
+          {% if key == 0 %}
+            <div class="carousel-item active">
+          {% else %}
+            <div class="carousel-item">
+          {% endif %}
+            {% set field_slides_type = item['#paragraph'].field_slides_type %}
+            {% set img_url = file_url(item['#paragraph'].field_image.entity.field_media_image.entity.uri.value) %}
+            {% set img_alt = item['#paragraph'].field_image.entity.field_media_image.value[0]['alt'] %}
+            {% set img_longdesc = item['#paragraph'].field_image.entity.field_longdesc.value %}
+
+            {% if field_slides_type.value == 'image' %}
+              <img src="{{ img_url }}" class="d-block" alt="{{ img_alt }}" {% if img_longdesc %} longdesc="{{ img_longdesc }}" {% endif %}>
+            {% elseif field_slides_type.value == 'video'%}
+              {% set video = item['#paragraph'].field_media.entity %}
+              {{ devel_breakpoint() }}
+              {% if video.bundle.value.0.target_id == 'video' %}
+                {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_video_file.entity.uri.value) %}
+                <video controls width="100%" src="{{ img_url }}"></video>
+              {% endif %}
+              {% if video.bundle.value.0.target_id == 'remote_video' %}
+                {% set img_url = file_url(item['#paragraph'].field_media.entity.field_media_oembed_video.entity.uri.value) %}
+                <iframe width="1300" height="700" src="{{ video.field_media_oembed_video.value }}"></iframe>
+              {% endif %}
+            {% endif %}
+            <div class="carousel-caption">
+               <h3>{{ item['#paragraph'].field_title.value }}</h3>
+               <p class="d-none d-sm-block"> {{ item['#paragraph'].field_description.value }} </p>
+               <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url}}"
+               {% if item['#paragraph'].field_external_link.value == 1 %}
+                    target="_blank" class="alert-leave-page"
+                    {% endif %}>Leer más <span class="sr-only">sobre {{ item['#paragraph'].field_title.value }}{% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana{% endif %}</span>
+                </a>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="controles">
+        <a class="carousel-control-prev" role="button" {#data-slide="prev"#}>
+          <i class="fas fa-chevron-circle-left"></i>
+          <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+          <span class="sr-only">Ir a la imagen Anterior</span>
+        </a>
+        <div id="carouselButtons">
+              <button id="playButton" type="button" class="btn btn-default btn-xs active">
+              <i class="far fa-play-circle"></i>
+              <span class="sr-only">Reproducir</span>
+              </button>
+              <button id="pauseButton" type="button" class="btn btn-default btn-xs">
+              <i class="fas fa-pause-circle"></i>
+              <span class="sr-only">Pausar</span>
+              </button>
+          </div>
+        <a class="carousel-control-next" role="button" {#data-slide="next"#}>
+          <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+          <i class="fas fa-chevron-circle-right"></i>
+          <span class="sr-only">Ir a la imagen siguiente</span>
+        </a>
+      </div>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

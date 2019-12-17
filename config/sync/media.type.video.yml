@@ -1,0 +1,16 @@
+uuid: 245196a6-0ede-46b4-9ed6-407d0b38e663
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _Cj9j8iA9MZ3HWv7QEwv1Pdxni0UlWGKnMw3Ou0rlXo
+id: video
+label: Vídeo
+description: 'Un archivo de vídeo alojado localmente.'
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_video_file
+field_map:
+  filesize: field_media_video_file

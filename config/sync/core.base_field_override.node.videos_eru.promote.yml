@@ -1,0 +1,22 @@
+uuid: 962d5f9a-936f-4df5-884a-666cae8e1df4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_eru
+id: node.videos_eru.promote
+field_name: promote
+entity_type: node
+bundle: videos_eru
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

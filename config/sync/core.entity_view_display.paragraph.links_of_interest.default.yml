@@ -1,0 +1,25 @@
+uuid: 21140751-0447-4636-beac-fb7ab36e8a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.links_of_interest.field_links
+    - paragraphs.paragraphs_type.links_of_interest
+  module:
+    - entity_reference_revisions
+id: paragraph.links_of_interest.default
+targetEntityType: paragraph
+bundle: links_of_interest
+mode: default
+content:
+  field_links:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

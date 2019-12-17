@@ -1,0 +1,58 @@
+uuid: 016a9189-cbf0-4afe-8faf-8412390569fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.news
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: node.news.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: news
+label: Gallery
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery: gallery
+    target_bundles_drag_drop:
+      galleries:
+        weight: -17
+        enabled: false
+      gallery:
+        enabled: true
+        weight: -16
+      data:
+        weight: -15
+        enabled: false
+      general_data_:
+        weight: -14
+        enabled: false
+      links:
+        weight: -13
+        enabled: false
+      links_of_interest:
+        weight: -12
+        enabled: false
+      slides:
+        weight: -11
+        enabled: false
+      slideshow:
+        weight: -10
+        enabled: false
+      video:
+        weight: 19
+        enabled: false
+      videos:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

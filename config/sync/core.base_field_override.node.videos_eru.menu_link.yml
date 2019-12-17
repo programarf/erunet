@@ -1,0 +1,20 @@
+uuid: ae53afc6-b4aa-46c6-857a-5fc92a975146
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_eru
+id: node.videos_eru.menu_link
+field_name: menu_link
+entity_type: node
+bundle: videos_eru
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

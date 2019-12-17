@@ -1,0 +1,22 @@
+uuid: e89023f1-adb7-4f25-a16e-9a7b562f33e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.videos_eru
+  module:
+    - text
+id: node.videos_eru.body
+field_name: body
+entity_type: node
+bundle: videos_eru
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

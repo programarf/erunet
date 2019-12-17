@@ -1,0 +1,17 @@
+uuid: d33dfdc4-0dbf-4c31-9c46-f138c43172ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Landing page'
+type: landing_page
+description: 'Use a landing page template.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

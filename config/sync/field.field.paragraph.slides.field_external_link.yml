@@ -1,0 +1,23 @@
+uuid: 63f14ccd-f911-4096-925a-4b2d55522965
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_external_link
+    - paragraphs.paragraphs_type.slides
+id: paragraph.slides.field_external_link
+field_name: field_external_link
+entity_type: paragraph
+bundle: slides
+label: 'External link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'YES'
+  off_label: 'NO'
+field_type: boolean

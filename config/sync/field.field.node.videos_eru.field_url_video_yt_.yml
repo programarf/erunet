@@ -1,0 +1,28 @@
+uuid: 3a03a308-7ff8-4506-97d1-aad41f990332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_video_yt_
+    - media.type.remote_video
+    - node.type.videos_eru
+id: node.videos_eru.field_url_video_yt_
+field_name: field_url_video_yt_
+entity_type: node
+bundle: videos_eru
+label: 'Url Video you tube '
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

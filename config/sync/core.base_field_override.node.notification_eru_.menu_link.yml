@@ -1,0 +1,20 @@
+uuid: 9124d064-c652-4655-a0c3-316bf0305644
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.notification_eru_
+id: node.notification_eru_.menu_link
+field_name: menu_link
+entity_type: node
+bundle: notification_eru_
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

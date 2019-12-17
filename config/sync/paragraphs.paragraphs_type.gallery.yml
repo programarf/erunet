@@ -1,0 +1,9 @@
+uuid: cc56757e-73da-4aab-a92a-1453df290568
+langcode: es
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery
+icon_uuid: null
+description: 'They are used for news galleries'
+behavior_plugins: {  }

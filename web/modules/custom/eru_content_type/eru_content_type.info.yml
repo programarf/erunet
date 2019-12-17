@@ -1,0 +1,5 @@
+name: 'eru_content_type'
+type: module
+description: 'Manage content types for ERU portal'
+core: 8.x
+package: 'Custom'

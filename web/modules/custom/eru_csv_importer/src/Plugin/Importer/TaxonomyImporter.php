@@ -1,0 +1,16 @@
+<?php
+
+namespace Drupal\eru_csv_importer\Plugin\Importer;
+
+use Drupal\eru_csv_importer\Plugin\ImporterBase;
+
+/**
+ * Class TaxonomyImporter.
+ *
+ * @Importer(
+ *   id = "taxonomy_term_importer",
+ *   entity_type = "taxonomy_term",
+ *   label = @Translation("Taxonomy importer")
+ * )
+ */
+class TaxonomyImporter extends ImporterBase {}

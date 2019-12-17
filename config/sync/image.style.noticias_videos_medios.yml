@@ -1,0 +1,15 @@
+uuid: bda8d9f9-bc2d-4517-a8a3-d9dddc410349
+langcode: es
+status: true
+dependencies: {  }
+name: noticias_videos_medios
+label: 'Noticias - Videos - Medios'
+effects:
+  a0b3986e-f849-4dca-af4b-f1ba54ba8074:
+    uuid: a0b3986e-f849-4dca-af4b-f1ba54ba8074
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 220
+      anchor: left-top

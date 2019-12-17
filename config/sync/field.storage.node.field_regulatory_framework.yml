@@ -1,0 +1,19 @@
+uuid: 3615da7e-03ec-4767-94d8-e1725326838f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_regulatory_framework
+field_name: field_regulatory_framework
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

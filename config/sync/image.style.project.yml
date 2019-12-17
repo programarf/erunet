@@ -1,0 +1,14 @@
+uuid: 89634965-085c-4458-a510-9ffaa99e30ec
+langcode: en
+status: true
+dependencies: {  }
+name: project
+label: Project
+effects:
+  f5265f97-6b01-4da7-8b8f-ae6c64e75b59:
+    uuid: f5265f97-6b01-4da7-8b8f-ae6c64e75b59
+    id: image_resize
+    weight: 1
+    data:
+      width: 370
+      height: 332

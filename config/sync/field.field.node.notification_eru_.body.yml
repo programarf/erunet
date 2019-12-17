@@ -1,0 +1,22 @@
+uuid: 716848d4-9a86-4843-9691-8e4004410100
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.notification_eru_
+  module:
+    - text
+id: node.notification_eru_.body
+field_name: body
+entity_type: node
+bundle: notification_eru_
+label: Descripción
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

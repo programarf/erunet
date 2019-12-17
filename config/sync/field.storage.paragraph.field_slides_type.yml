@@ -1,0 +1,27 @@
+uuid: be4d2038-9e75-4d3a-9122-4e8f33d2f353
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_slides_type
+field_name: field_slides_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: image
+      label: Imagen
+    -
+      value: video
+      label: Video
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

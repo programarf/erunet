@@ -1,0 +1,52 @@
+langcode: es
+page_title: 'Mapa del sitio'
+message:
+  value: ''
+  format: restricted_html
+show_front: false
+show_titles: false
+show_books: {  }
+books_expanded: true
+show_menus:
+  main: main
+  secondary-menu: secondary-menu
+  account: '0'
+  admin: '0'
+  devel: '0'
+  footer: '0'
+  social-media: '0'
+  tools: '0'
+show_menus_hidden: false
+show_vocabularies:
+  tags_of_news: tags_of_news
+  tabs_in_media: '0'
+  tabs_in_project: '0'
+  tags: '0'
+  type_of_project: '0'
+show_description: true
+show_count: true
+vocabulary_show_links: false
+vocabulary_depth: -1
+term_threshold: 0
+forum_threshold: -1
+rss_front: rss.xml
+show_rss_links: 1
+rss_taxonomy: -1
+css: true
+order:
+  front: -50
+  menus_account: -50
+  menus_admin: -50
+  menus_devel: -50
+  menus_footer: -50
+  menus_main: -50
+  menus_secondary-menu: -50
+  menus_social-media: -50
+  menus_tools: -50
+  vocabularies_tabs_in_media: -50
+  vocabularies_tabs_in_project: -50
+  vocabularies_tags: -50
+  vocabularies_tags_of_news: -50
+  vocabularies_type_of_project: -50
+_core:
+  default_config_hash: f4sH8CGbEMFQXKFoGeaHbmIP_f6cOTi02EeFhHSbYyo

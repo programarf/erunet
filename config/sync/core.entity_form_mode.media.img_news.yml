@@ -1,0 +1,10 @@
+uuid: 14d73564-5cc8-4bc1-8ed3-f0a9a0e7591b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.img_news
+label: 'Img news'
+targetEntityType: media
+cache: true
