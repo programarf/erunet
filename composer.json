@@ -24,7 +24,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/addtoany": "^1.12",
         "drupal/admin_toolbar": "^1.26",
-        "drupal/backup_migrate": "4.0",
+        "drupal/backup_migrate": "^4.1",
         "drupal/ckeditor_config": "^2.1",
         "drupal/coder": "^8.3",
         "drupal/components": "^1.0",
