@@ -28,7 +28,6 @@ third_party_settings:
       header:
         - node_title
         - field_gallery
-        - field_tags
       sidebar:
         - 'dynamic_token_field:node-created'
         - addtoany
@@ -44,7 +43,7 @@ third_party_settings:
         formatter: default
       'dynamic_token_field:node-created':
         plugin_id: 'dynamic_token_field:node-created'
-        weight: 0
+        weight: 2
         label: hidden
         formatter: default
 id: node.news.default
@@ -53,14 +52,14 @@ bundle: news
 mode: default
 content:
   addtoany:
-    weight: 5
+    weight: 3
     region: sidebar
     settings: {  }
     third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 7
+    weight: 5
     settings: {  }
     third_party_settings:
       field_formatter_class:
@@ -74,7 +73,7 @@ content:
             classes: {  }
     region: contentmain
   field_attach_file:
-    weight: 8
+    weight: 6
     label: visually_hidden
     settings:
       use_description_as_link_text: true
@@ -109,19 +108,12 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-  field_tags:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: header
   links:
-    weight: 6
+    weight: 4
     region: sidebar
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_cover_img: true
+  field_tags: true
   langcode: true

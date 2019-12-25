@@ -1,0 +1,24 @@
+uuid: fdf5cf3f-b81a-485b-8eb7-6cb7e7c60b2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha
+    - node.type.eventos
+  module:
+    - datetime
+id: node.eventos.field_fecha
+field_name: field_fecha
+entity_type: node
+bundle: eventos
+label: 'Fecha de la Actividad'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

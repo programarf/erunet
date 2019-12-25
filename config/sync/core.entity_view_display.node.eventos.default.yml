@@ -1,0 +1,52 @@
+uuid: d7130ec6-266f-4d54-83d4-426a8317e809
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.eventos.body
+    - field.field.node.eventos.field_fecha
+    - field.field.node.eventos.field_gallery
+    - node.type.eventos
+  module:
+    - datetime
+    - entity_reference_revisions
+    - text
+    - user
+id: node.eventos.default
+targetEntityType: node
+bundle: eventos
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_gallery:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

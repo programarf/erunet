@@ -1,0 +1,20 @@
+uuid: bec3acd2-939b-4174-8424-cd45edd93ff4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_proceso
+field_name: field_proceso
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

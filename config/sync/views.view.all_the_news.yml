@@ -9,11 +9,9 @@ dependencies:
     - image.style.noticias_videos_medios
     - image.style.thumbnail
     - node.type.news
-    - taxonomy.vocabulary.tags
   module:
     - image
     - node
-    - taxonomy
     - text
     - user
 id: all_the_news
@@ -85,7 +83,7 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: 'col-12 col-md-4 col-sm-6 views-col mb-5'
+          col_class_custom: 'col-12 col-sm-6 col-md-4 views-col mb-5'
           row_class_default: false
           row_class_custom: ''
       row:
@@ -1104,53 +1102,6 @@ display:
           vid: tags_of_news
           hierarchy: false
           error_message: true
-        field_tags_target_id:
-          id: field_tags_target_id
-          table: node__field_tags
-          field: field_tags_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_tags_target_id_op
-            label: Categoria
-            description: ''
-            use_operator: false
-            operator: field_tags_target_id_op
-            identifier: field_tags_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: tags
-          hierarchy: false
-          error_message: true
-          entity_type: node
-          entity_field: created
-          plugin_id: taxonomy_index_tid
         langcode:
           id: langcode
           table: node_field_data
@@ -1286,14 +1237,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
-            word_boundary: false
+            max_length: 220
+            word_boundary: true
             ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: false
-            trim: false
+            trim: true
             preserve_tags: ''
             html: false
           element_type: ''
@@ -1303,7 +1254,7 @@ display:
           element_label_colon: false
           element_wrapper_type: h3
           element_wrapper_class: title-one
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -1418,7 +1369,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 120
+            max_length: 110
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -1443,7 +1394,7 @@ display:
           click_sort_column: summary
           type: text_summary_or_trimmed
           settings:
-            trim_length: 120
+            trim_length: 110
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1541,7 +1492,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

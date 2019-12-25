@@ -1,0 +1,29 @@
+uuid: 2d8f3536-ef35-412d-bf37-a704d15f0dd7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proceso
+    - node.type.documento_sig
+    - taxonomy.vocabulary.proceso
+id: node.documento_sig.field_proceso
+field_name: field_proceso
+entity_type: node
+bundle: documento_sig
+label: Proceso
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      proceso: proceso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

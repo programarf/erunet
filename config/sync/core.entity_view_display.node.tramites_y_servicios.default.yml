@@ -1,0 +1,58 @@
+uuid: 3246bfd4-2ca8-410a-8211-fe9afa3e28f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.tramites_y_servicios.body
+    - field.field.node.tramites_y_servicios.field_attach_file
+    - field.field.node.tramites_y_servicios.field_cover_img
+    - node.type.tramites_y_servicios
+  module:
+    - ds
+    - field_formatter_class
+    - file
+    - image
+    - text
+    - user
+id: node.tramites_y_servicios.default
+targetEntityType: node
+bundle: tramites_y_servicios
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attach_file:
+    weight: 2
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_cover_img:
+    weight: 0
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

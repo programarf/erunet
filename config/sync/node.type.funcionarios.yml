@@ -1,0 +1,18 @@
+uuid: 651dd58b-ab57-455f-af28-277987f0dbcd
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Funcionarios
+type: funcionarios
+description: 'Tipo de contenido para el directorio y cumpleaños de los funcionarios de la Empresa'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

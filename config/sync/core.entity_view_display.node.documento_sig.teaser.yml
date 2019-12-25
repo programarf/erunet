@@ -1,0 +1,32 @@
+uuid: 75785156-ad8a-496b-93ca-8d5972ae5e38
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.documento_sig.body
+    - node.type.documento_sig
+  module:
+    - text
+    - user
+id: node.documento_sig.teaser
+targetEntityType: node
+bundle: documento_sig
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

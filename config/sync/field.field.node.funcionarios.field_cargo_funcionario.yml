@@ -1,0 +1,19 @@
+uuid: fe7e95c8-a8a0-4d47-82e6-5dc5d444e6e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cargo_funcionario
+    - node.type.funcionarios
+id: node.funcionarios.field_cargo_funcionario
+field_name: field_cargo_funcionario
+entity_type: node
+bundle: funcionarios
+label: 'Cargo funcionario'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

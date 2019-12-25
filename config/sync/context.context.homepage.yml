@@ -80,7 +80,7 @@ reactions:
         uuid: e6f815be-9ca8-458d-846b-6611eb368739
       ac852f36-3170-4ce6-aa81-3694bba11657:
         id: 'block_content:03013db1-36d0-433b-936f-5120a7eabd62'
-        label: transparency
+        label: Transparencia
         provider: block_content
         label_display: 0
         status: true

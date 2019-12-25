@@ -1,0 +1,8 @@
+uuid: cac492d6-bbf3-417a-a0e4-1992010fce60
+langcode: es
+status: true
+dependencies: {  }
+name: Dependencia
+vid: dependencia
+description: 'Áreas de trabajo que conforman toda la organización'
+weight: 0

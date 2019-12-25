@@ -1,0 +1,50 @@
+uuid: 05837c72-0397-4032-984c-07e22fd4422a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.clasificados.body
+    - field.field.node.clasificados.field_gallery
+    - field.field.node.clasificados.field_location
+    - node.type.clasificados
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.clasificados.default
+targetEntityType: node
+bundle: clasificados
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_location:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

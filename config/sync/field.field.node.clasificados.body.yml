@@ -1,0 +1,22 @@
+uuid: 7de85f19-ac66-4b3c-b707-fcb0cc2ac872
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.clasificados
+  module:
+    - text
+id: node.clasificados.body
+field_name: body
+entity_type: node
+bundle: clasificados
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

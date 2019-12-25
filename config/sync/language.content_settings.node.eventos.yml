@@ -1,0 +1,11 @@
+uuid: b0b6a151-468c-451c-be18-25613e85e41c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.eventos
+id: node.eventos
+target_entity_type_id: node
+target_bundle: eventos
+default_langcode: site_default
+language_alterable: false

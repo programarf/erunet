@@ -21,6 +21,7 @@ conditions:
       notification_eru_: notification_eru_
       page: page
       project: project
+      tramites_y_servicios: tramites_y_servicios
       videos_eru: videos_eru
     negate: 0
     uuid: 28f19327-a877-473b-a181-225778495fed
@@ -28,7 +29,7 @@ conditions:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/noticias\r\n/proyectos\r\n/busqueda"
+    pages: "/noticias\r\n/proyectos\r\n/busqueda\r\n/transparencia/tramites-y-servicios"
     negate: 0
     uuid: dcd7bc35-1ee4-4c3b-9dc0-578e2e15902f
     context_mapping: {  }
@@ -63,7 +64,7 @@ reactions:
         weight: '1'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-4 menu-secundario'
+        css_class: 'col-md-4 col-12 social-media'
         unique: 0
         context_id: paginas_sitio
         uuid: 6ff1801c-7108-44dd-9cf0-51238606d5c2
@@ -175,7 +176,7 @@ reactions:
         weight: '3'
         context_mapping: {  }
         theme: theme_eru
-        css_class: 'col-md-4 col-lg-4 col-sm-12'
+        css_class: 'col-md-4 col-lg-4 col-sm-12 contact'
         unique: 0
         context_id: paginas_sitio
         uuid: b0e5db6d-5374-4d5b-b65f-42549ea43955

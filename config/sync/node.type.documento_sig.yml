@@ -1,0 +1,18 @@
+uuid: c3d3ef10-f96a-496c-9963-90225e87380e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Documento SIG'
+type: documento_sig
+description: 'Tipo de contenido para publicar los documentos relacionados con MIPG'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

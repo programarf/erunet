@@ -7,11 +7,12 @@ dependencies:
     - field.field.node.videos_eru.field_image_main
     - field.field.node.videos_eru.field_tags
     - field.field.node.videos_eru.field_textual_transcription
-    - field.field.node.videos_eru.field_url_video_yt_
+    - field.field.node.videos_eru.field_videos
     - image.style.thumbnail
     - node.type.videos_eru
   module:
     - image
+    - paragraphs
     - path
     - text
 id: node.videos_eru.default
@@ -42,14 +43,24 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_url_video_yt_:
-    weight: 10
+  field_videos:
+    weight: 26
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: videos
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: paragraphs
     region: content
   langcode:
     type: language_select

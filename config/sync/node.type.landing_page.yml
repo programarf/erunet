@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'Landing page'
+name: 'Banner Principal'
 type: landing_page
-description: 'Use a landing page template.'
+description: 'Tipo de contenido para el banner principal'
 help: ''
 new_revision: false
 preview_mode: 1
