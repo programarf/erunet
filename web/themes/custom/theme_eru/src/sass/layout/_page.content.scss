@@ -153,8 +153,12 @@
 			}
 		}
 		.views-field-body {
-			display: block;
+			display: block !important;
 			margin-top: 1.5em;
+		}
+		video {
+			width: 100% !important;
+			height: auto !important;
 		}
 
 	}

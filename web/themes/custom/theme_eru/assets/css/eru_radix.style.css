@@ -16364,8 +16364,12 @@ tr:nth-child(even) {
   left: 72%;
 }
 .page__content .video-home .views-field-body {
-  display: block;
+  display: block !important;
   margin-top: 1.5em;
+}
+.page__content .video-home video {
+  width: 100% !important;
+  height: auto !important;
 }
 .page__content .fila1, .page__content .fila2 {
   flex-direction: row;
