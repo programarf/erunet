@@ -16337,8 +16337,8 @@ tr:nth-child(even) {
 }
 .page__content .video-home h3 {
   font-size: 1.3em;
-  padding: 20px 0;
   font-weight: 600;
+  padding: 10px;
 }
 .page__content .video-home h3 a {
   color: #000;
@@ -16346,6 +16346,10 @@ tr:nth-child(even) {
 .page__content .video-home .views-field-body {
   display: block !important;
   margin-top: 1.5em;
+  padding: 10px;
+}
+.page__content .video-home .views-field-field-descripcion {
+  padding: 10px;
 }
 .page__content .video-home video {
   width: 100% !important;
@@ -16353,6 +16357,7 @@ tr:nth-child(even) {
 }
 .page__content .video-home .more-link {
   justify-content: flex-end !important;
+  margin: 0 0 1rem;
 }
 .page__content .video-home .more-link a, .page__content .video-home .more-link a:hover {
   color: #0A6EC8;

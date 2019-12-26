@@ -142,8 +142,8 @@
 		margin-bottom: 2rem;		
 		h3{
 			font-size: 1.3em;
-			padding: 20px 0;
 			font-weight: 600;
+			padding: 10px;
 			a{
 				color: #000;
 			}
@@ -151,6 +151,10 @@
 		.views-field-body {
 			display: block !important;
 			margin-top: 1.5em;
+			padding: 10px;
+		}
+		.views-field-field-descripcion {
+			padding: 10px;
 		}
 		video {
 			width: 100% !important;
@@ -159,6 +163,7 @@
 		.more-link
 		{
 			justify-content: flex-end !important; 
+			margin: 0 0 1rem;
 			a, a:hover{
 				color: #0A6EC8;
 				background: #fff;
