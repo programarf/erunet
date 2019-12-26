@@ -15879,7 +15879,7 @@ h3, h4, h5, h6 {
   margin-bottom: 1em;
 }
 
-h2 {
+h2, .eventos header {
   font-weight: 900;
   text-align: center;
   line-height: 1.5;
@@ -16364,6 +16364,9 @@ tr:nth-child(even) {
 }
 .page__content .video-home .more-link a:hover {
   text-decoration: underline;
+}
+.page__content .eventos {
+  padding: 2em;
 }
 .page__content .funcionarios .foto-funcionario img {
   border-radius: 50%;
