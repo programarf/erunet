@@ -50,6 +50,14 @@ targetEntityType: node
 bundle: news
 mode: default
 content:
+<<<<<<< HEAD
+=======
+  addtoany:
+    weight: 3
+    region: sidebar
+    settings: {  }
+    third_party_settings: {  }
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
   body:
     label: hidden
     type: text_default

@@ -1,10 +1,26 @@
+<<<<<<< HEAD
 uuid: e89b9455-ba1f-4319-977e-4f947c82d361
+=======
+<<<<<<< HEAD:config/sync/field.field.node.clasificados.field_cover_img.yml
+uuid: 44856d11-5289-41b0-98f2-5bf16ab9c811
+=======
+uuid: e89b9455-ba1f-4319-977e-4f947c82d361
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.tramites_y_servicios.field_cover_img.yml
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.field_cover_img
+<<<<<<< HEAD
     - node.type.tramites_y_servicios
+=======
+<<<<<<< HEAD:config/sync/field.field.node.clasificados.field_cover_img.yml
+    - node.type.clasificados
+=======
+    - node.type.tramites_y_servicios
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.tramites_y_servicios.field_cover_img.yml
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
   module:
     - content_translation
     - image
@@ -14,13 +30,29 @@ third_party_settings:
       alt: alt
       title: title
       file: '0'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:config/sync/field.field.node.clasificados.field_cover_img.yml
+id: node.clasificados.field_cover_img
+field_name: field_cover_img
+entity_type: node
+bundle: clasificados
+label: 'Imagen del clasificado'
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
 id: node.tramites_y_servicios.field_cover_img
 field_name: field_cover_img
 entity_type: node
 bundle: tramites_y_servicios
 label: Imagen
+<<<<<<< HEAD
 description: ''
 required: false
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.tramites_y_servicios.field_cover_img.yml
+description: ''
+required: true
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
 translatable: true
 default_value: {  }
 default_value_callback: ''

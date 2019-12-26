@@ -43,7 +43,11 @@ content:
     type: image_image
     region: content
   field_videos:
+<<<<<<< HEAD
     weight: 11
+=======
+    weight: 26
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     settings:
       title: Paragraph
       title_plural: Paragraphs

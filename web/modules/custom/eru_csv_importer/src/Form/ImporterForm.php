@@ -315,6 +315,7 @@ class ImporterForm extends FormBase {
     }
 
     $csv_fields = array_values(array_unique($csv_fields));
+    $required = array_values(array_unique($required));
 
     return array_diff($required, $csv_fields);
   }
@@ -334,6 +335,13 @@ class ImporterForm extends FormBase {
 
     $entity_fields = $this->getEntityTypeFields($entity_type, $entity_type_bundle);
 
+    // Format field names before process.
+    if (!empty($csv_parse[0])) {
+      $field_names = &$csv_parse[0];
+      foreach ($field_names as $key => $field_name) {
+        $field_names[$key] = preg_replace('/[^A-Za-z0-9\-_]/', '', $field_name);
+      }
+    }
     if ($required = $this->getEntityTypeMissingFields($entity_type, $entity_fields['required'], $csv_parse)) {
       $render = [
         '#theme' => 'item_list',

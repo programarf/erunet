@@ -1,21 +1,59 @@
+<<<<<<< HEAD
 uuid: 19e53315-f295-4392-a8b3-fce6cb31d5e0
+=======
+<<<<<<< HEAD:config/sync/core.entity_form_display.node.clasificados.default.yml
+uuid: 5adfb92c-1394-4674-847a-5f4a3e5a3625
+=======
+uuid: 19e53315-f295-4392-a8b3-fce6cb31d5e0
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/core.entity_form_display.node.tramites_y_servicios.default.yml
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
 langcode: es
 status: true
 dependencies:
   config:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:config/sync/core.entity_form_display.node.clasificados.default.yml
+    - field.field.node.clasificados.body
+    - field.field.node.clasificados.field_cover_img
+    - field.field.node.clasificados.field_gallery
+    - field.field.node.clasificados.field_location
+    - image.style.thumbnail
+    - node.type.clasificados
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     - field.field.node.tramites_y_servicios.body
     - field.field.node.tramites_y_servicios.field_attach_file
     - field.field.node.tramites_y_servicios.field_cover_img
     - image.style.thumbnail
     - node.type.tramites_y_servicios
+<<<<<<< HEAD
   module:
     - file
     - image
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/core.entity_form_display.node.tramites_y_servicios.default.yml
+  module:
+    - file
+    - image
+<<<<<<< HEAD:config/sync/core.entity_form_display.node.clasificados.default.yml
+    - paragraphs
+    - path
+    - text
+id: node.clasificados.default
+targetEntityType: node
+bundle: clasificados
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     - path
     - text
 id: node.tramites_y_servicios.default
 targetEntityType: node
 bundle: tramites_y_servicios
+<<<<<<< HEAD
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/core.entity_form_display.node.tramites_y_servicios.default.yml
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
 mode: default
 content:
   body:
@@ -33,13 +71,45 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+<<<<<<< HEAD
   field_attach_file:
+=======
+<<<<<<< HEAD:config/sync/core.entity_form_display.node.clasificados.default.yml
+  field_cover_img:
+=======
+  field_attach_file:
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/core.entity_form_display.node.tramites_y_servicios.default.yml
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     weight: 123
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:config/sync/core.entity_form_display.node.clasificados.default.yml
+  field_gallery:
+    weight: 122
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: gallery
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_location:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
   field_cover_img:
     weight: 122
     settings:
@@ -47,6 +117,10 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+<<<<<<< HEAD
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/core.entity_form_display.node.tramites_y_servicios.default.yml
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     region: content
   langcode:
     type: language_select

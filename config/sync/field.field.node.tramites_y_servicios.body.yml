@@ -1,9 +1,21 @@
+<<<<<<< HEAD
+<<<<<<< HEAD:config/sync/field.field.node.tramites_y_servicios.body.yml
 uuid: 14204901-dc2f-4f05-92e0-4b2d10cea983
+=======
+uuid: a8e13784-8841-4d75-bb67-f48c048b410d
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.eventos.body.yml
+=======
+uuid: 14204901-dc2f-4f05-92e0-4b2d10cea983
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.body
+<<<<<<< HEAD
+<<<<<<< HEAD:config/sync/field.field.node.tramites_y_servicios.body.yml
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     - node.type.tramites_y_servicios
   module:
     - text
@@ -11,6 +23,18 @@ id: node.tramites_y_servicios.body
 field_name: body
 entity_type: node
 bundle: tramites_y_servicios
+<<<<<<< HEAD
+=======
+    - node.type.eventos
+  module:
+    - text
+id: node.eventos.body
+field_name: body
+entity_type: node
+bundle: eventos
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.eventos.body.yml
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
 label: Body
 description: ''
 required: false

@@ -106,7 +106,7 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
                   $return['content'][$index][$field][$in] = $content;
                 }
               }
-              else if (isset($return['content'][$index][$field])) {
+              elseif (isset($return['content'][$index][$field])) {
                 $prev = $return['content'][$index][$field];
                 $return['content'][$index][$field] = [];
 
@@ -154,10 +154,10 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
       if ($entity_definition->hasKey('bundle') && $entity_type_bundle) {
         $data[$entity_definition->getKey('bundle')] = $this->configuration['entity_type_bundle'];
       }
-      
+
       /** @var \Drupal\Core\Entity\Sql\SqlContentEntityStorage $entity_storage  */
       $entity_storage = $this->entityTypeManager->getStorage($this->configuration['entity_type']);
-      
+
       try {
         if (isset($data[$entity_definition->getKeys()['id']]) && $entity = $entity_storage->load($data[$entity_definition->getKeys()['id']])) {
           /** @var \Drupal\Core\Entity\ContentEntityInterface $entity  */
@@ -166,7 +166,7 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
           }
 
           $this->preSave($entity, $data, $context);
-  
+
           if ($entity->save()) {
             $updated++;
           }
@@ -185,6 +185,32 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
                 'title' => $content['content'][$key]['title'] ?? '',
               ];
               $data[$field] = $this->createImage($value, $properties);
+            }
+
+            // If field is file type.
+            if (!empty($definitions[$field])
+              && method_exists($definitions[$field], 'getType')
+              && $definitions[$field]->getType() === 'file'
+            ) {
+              $properties = [
+                'title' => $content['content'][$key]['title'] ?? '',
+              ];
+              $data[$field] = $this->createFile($value, $properties);
+            }
+
+            // If field is type date.
+            if (!empty($definitions[$field])
+              && method_exists($definitions[$field], 'getType')
+              && $definitions[$field]->getType() === 'datetime'
+            ) {
+              if (!empty($definitions[$field]->getSettings()['datetime_type'])
+                && $definitions[$field]->getSettings()['datetime_type'] === 'date'
+              ) {
+                $date_format = \Drupal::configFactory()->getEditable('core.date_format.html_date');
+                if (!empty($date_format->getRawData()['pattern'])) {
+                  $data[$field] = date($date_format->getRawData()['pattern'], $value);
+                }
+              }
             }
 
             // Validate if field is url type.
@@ -296,7 +322,11 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
                     ]
                   );
                   $term = reset($term);
-                  if (empty($term)) {
+                  $no_generate_taxonomy = [
+                    'funcionarios',
+                    'documento_sig',
+                  ];
+                  if (empty($term) && !in_array($entity_type_bundle, $no_generate_taxonomy)) {
                     $term = $this->entityTypeManager->getStorage('taxonomy_term')->create(
                       [
                         'name' => $value_term,
@@ -305,11 +335,26 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
                     );
                     $term->save();
                   }
-                  $tid = ['target_id' => $term->id()];
-                  array_push($terms, $tid);
+                  // If term is empty, to do nothing.
+                  if (!empty($term)) {
+                    $tid = ['target_id' => $term->id()];
+                    array_push($terms, $tid);
+                  }
                 }
                 $data[$field] = $terms;
                 continue;
+              }
+            }
+
+            // If field is list_string type.
+            if (!empty($definitions[$field])
+              && method_exists($definitions[$field], 'getType')
+              && $definitions[$field]->getType() === 'list_string'
+            ) {
+              if (!empty($definitions[$field]->getSettings()['allowed_values'])
+                && in_array($value, $definitions[$field]->getSettings()['allowed_values'])
+              ) {
+                $data[$field] = array_search($value, $definitions[$field]->getSettings()['allowed_values']);
               }
             }
           }
@@ -319,7 +364,7 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
             unset($data['summary']);
           }
           $entity = $this->entityTypeManager->getStorage($this->configuration['entity_type'])->create($data);
-          
+
           $this->preSave($entity, $data, $context);
 
           if ($entity->save()) {
@@ -336,7 +381,7 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
 
               foreach ($entity_data as $key => $translation_data) {
                 $entity_translation->set($key, $translation_data);
-              } 
+              }
             }
             else {
               $entity_translation = $entity->addTranslation($code, $entity_data);
@@ -413,6 +458,7 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
   public function createImage($value, $properties) {
     $image = '';
     try {
+      $value = preg_replace('/\?.*/', '', $value);
       $image_data = file_get_contents($value);
       if (!empty($image_data)) {
         $directory = file_default_scheme() . '://importer_images';
@@ -438,4 +484,38 @@ abstract class ImporterBase extends PluginBase implements ImporterInterface {
     return $image;
   }
 
+  /**
+   * @param $value
+   * @param $properties
+   * @return array|string
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  public function createFile($value, $properties) {
+    $data_file = '';
+    try {
+      $value = preg_replace('/\?.*/', '', $value);
+      $file_data = file_get_contents($value);
+      if (!empty($file_data)) {
+        $directory = file_default_scheme() . '://importer_files';
+        $prepare_directory = $this->fileSystem->prepareDirectory($directory, FILE_CREATE_DIRECTORY);
+        if ($prepare_directory) {
+          $real_path = $directory . '/' . end(explode('/', $value));
+          $created_file = file_put_contents($real_path, $file_data);
+          if (!empty($created_file)) {
+            $file = File::Create([
+              'uri' => $real_path,
+            ]);
+            $file->save();
+            $data_file = [
+              'target_id' => $file->id(),
+              'display' => 1,
+              'description' => '',
+            ];
+          }
+        }
+      }
+    }
+    catch (\Exception $e) {}
+    return $data_file;
+  }
 }

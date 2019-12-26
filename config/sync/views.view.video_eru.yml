@@ -7,7 +7,10 @@ dependencies:
     - field.storage.node.field_descripcion
     - field.storage.node.field_image_main
     - field.storage.node.field_textual_transcription
+<<<<<<< HEAD
     - field.storage.node.field_videos
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     - image.style.noticias_videos_medios
     - node.type.videos_eru
   module:
@@ -423,6 +426,7 @@ display:
       use_more_always: true
       use_more_text: 'TODOS LOS VIDEOS'
       fields:
+<<<<<<< HEAD
         field_videos:
           id: field_videos
           table: node__field_videos
@@ -486,6 +490,8 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
         title:
           id: title
           table: node_field_data
@@ -778,7 +784,10 @@ display:
       tags:
         - 'config:field.storage.node.field_descripcion'
         - 'config:field.storage.node.field_textual_transcription'
+<<<<<<< HEAD
         - 'config:field.storage.node.field_videos'
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
   page_1:
     display_plugin: page
     id: page_1
