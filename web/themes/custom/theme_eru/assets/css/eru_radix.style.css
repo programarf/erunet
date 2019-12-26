@@ -15884,6 +15884,7 @@ h2 {
   text-align: center;
   line-height: 1.5;
   font-size: 1.8em;
+  color: #003250;
 }
 
 h3, #titulo-busqueda {
@@ -16221,7 +16222,7 @@ tr:nth-child(even) {
 .page__content .more-link {
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 0 0 3rem;
   text-transform: uppercase;
 }
 .page__content .more-link a {
@@ -16290,8 +16291,11 @@ tr:nth-child(even) {
 .page__content .news-home h3::after, .page__content .page-search h3::after {
   content: none;
 }
+.page__content .news-home .views-field-created, .page__content .page-search .views-field-created {
+  padding: 0.3rem;
+}
 .page__content .news-home .title-one, .page__content .page-search .title-one {
-  margin: 20px 0 45px 0;
+  margin: 20px 0 20px 0;
   height: 60px;
 }
 .page__content .news-home .title-one::after, .page__content .page-search .title-one::after {
@@ -16334,17 +16338,10 @@ tr:nth-child(even) {
 .page__content .video-home h3 {
   font-size: 1.3em;
   padding: 20px 0;
+  font-weight: 600;
 }
 .page__content .video-home h3 a {
   color: #000;
-}
-.page__content .video-home h3::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  border-bottom: 2px solid #0A6EC8;
-  position: absolute;
-  left: 72%;
 }
 .page__content .video-home .views-field-body {
   display: block !important;
@@ -16353,6 +16350,26 @@ tr:nth-child(even) {
 .page__content .video-home video {
   width: 100% !important;
   height: auto !important;
+}
+.page__content .video-home .more-link {
+  justify-content: flex-end !important;
+}
+.page__content .video-home .more-link a, .page__content .video-home .more-link a:hover {
+  color: #0A6EC8;
+  background: #fff;
+  border-color: #fff;
+  font-weight: 500;
+}
+.page__content .video-home .more-link a:hover {
+  text-decoration: underline;
+}
+.page__content .funcionarios .foto-funcionario img {
+  border-radius: 50%;
+}
+.page__content .shadow {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .page__content .fila1, .page__content .fila2 {
   flex-direction: row;
