@@ -1,0 +1,11 @@
+uuid: 78ff28e2-4f8a-4bdc-9a07-d8e5ea52329d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.clasificados
+id: node.clasificados
+target_entity_type_id: node
+target_bundle: clasificados
+default_langcode: site_default
+language_alterable: false

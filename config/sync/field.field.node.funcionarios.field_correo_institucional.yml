@@ -1,0 +1,19 @@
+uuid: 7bd1643b-fb70-4882-890c-e18ad8f91584
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correo_institucional
+    - node.type.funcionarios
+id: node.funcionarios.field_correo_institucional
+field_name: field_correo_institucional
+entity_type: node
+bundle: funcionarios
+label: 'Correo institucional'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies: {  }
 id: gallery
-label: Gallery
+label: 'Galería de Imágenes'
 icon_uuid: null
-description: 'They are used for news galleries'
+description: 'Elemento para crear álbumes fotográficos. '
 behavior_plugins: {  }

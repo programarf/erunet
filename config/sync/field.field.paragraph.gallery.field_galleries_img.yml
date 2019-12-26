@@ -12,7 +12,7 @@ id: paragraph.gallery.field_galleries_img
 field_name: field_galleries_img
 entity_type: paragraph
 bundle: gallery
-label: Galleries
+label: 'Galería de Imágenes'
 description: ''
 required: false
 translatable: false
@@ -48,5 +48,11 @@ settings:
         enabled: false
       slideshow:
         weight: 16
+        enabled: false
+      video:
+        weight: 19
+        enabled: false
+      videos:
+        weight: 20
         enabled: false
 field_type: entity_reference_revisions

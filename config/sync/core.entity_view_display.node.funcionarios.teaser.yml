@@ -1,0 +1,24 @@
+uuid: 799915cf-def1-4864-a00f-f9d2c3d2f16a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.funcionarios.field_cargo_funcionario
+    - node.type.funcionarios
+  module:
+    - user
+id: node.funcionarios.teaser
+targetEntityType: node
+bundle: funcionarios
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_cargo_funcionario: true
+  langcode: true

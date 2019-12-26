@@ -1,0 +1,8 @@
+uuid: b0f0f1b0-1276-49a2-989e-f0f482176344
+langcode: es
+status: true
+dependencies: {  }
+id: dia
+label: Día
+locked: false
+pattern: d

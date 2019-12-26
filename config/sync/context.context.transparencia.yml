@@ -14,7 +14,7 @@ disabled: false
 conditions:
   request_path:
     id: request_path
-    pages: "/mecanismos-para-la-atencion-al-ciudadano\r\n/mision-y-vision\r\n/procesos-y-procedimientos"
+    pages: "/mecanismos-para-la-atencion-al-ciudadano\r\n/mision-y-vision\r\n/procesos-y-procedimientos\r\n/politicas-de-seguridad-de-la-informacion-y-proteccion-de-datos-personales\r\n/datos-abiertos\r\n/preguntas-frecuentes-faq\r\n/estudios-investigaciones-y-otras-publicaciones\r\n/preguntas-mas-frecuentes-faq\r\n/mision-y-vision\r\n/directorio-de-informacion-de-servidores-publicos-empleados-y-contratistas\r\n/directorio-de-entidades\r\n/procesos-y-procedimientos\r\n/directorio-de-agremiaciones-asociaciones-y-otros-grupos-de-interes\r\n/organigrama\r\n/funciones-y-deberes\r\n/actos-administrativos-de-nombramiento\r\n/ofertas-de-empleo\r\n/transparencia/mecanismos-de-contacto\r\n/transparencia/informacion-de-interes\r\n/transparencia/estructura-organica-y-talento-humano\r\n/transparencia/normatividad\r\n/transparencia/presupuesto\r\n/transparencia/planeacion\r\n/transparencia/control\r\n/transparencia/contratacion\r\n/transparencia/instrumentos-de-gestion-de-informacion-publica\r\n/transparencia/tramites-y-servicios\r\n/tramites-servicios/*"
     negate: 0
     uuid: b16c0a93-47bc-4e77-ac1f-a3d1a90eec70
     context_mapping: {  }

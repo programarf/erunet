@@ -1,0 +1,11 @@
+uuid: b431b175-6f9f-4275-982c-a3a3642cff16
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.funcionarios
+id: node.funcionarios
+target_entity_type_id: node
+target_bundle: funcionarios
+default_langcode: site_default
+language_alterable: false

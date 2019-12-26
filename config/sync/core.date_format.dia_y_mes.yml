@@ -1,0 +1,8 @@
+uuid: 53f3f6ef-f871-4f52-949f-1b746133d22e
+langcode: es
+status: true
+dependencies: {  }
+id: dia_y_mes
+label: 'Día y Mes'
+locked: false
+pattern: 'd \d\e F'

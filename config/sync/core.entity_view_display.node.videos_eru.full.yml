@@ -4,11 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.videos_eru.body
     - field.field.node.videos_eru.field_image_main
     - field.field.node.videos_eru.field_tags
     - field.field.node.videos_eru.field_textual_transcription
-    - field.field.node.videos_eru.field_url_video_yt_
+    - field.field.node.videos_eru.field_videos
     - node.type.videos_eru
   module:
     - ds
@@ -54,30 +53,12 @@ content:
             classes: {  }
     type: link
     region: content
-  field_url_video_yt_:
-    type: entity_reference_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: media_project
-      link: false
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   field_image_main: true
+  field_videos: true
   langcode: true

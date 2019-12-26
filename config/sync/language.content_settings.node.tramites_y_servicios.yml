@@ -1,0 +1,11 @@
+uuid: fddf5858-0aa5-4ed6-be30-333cb8f963d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.tramites_y_servicios
+id: node.tramites_y_servicios
+target_entity_type_id: node
+target_bundle: tramites_y_servicios
+default_langcode: site_default
+language_alterable: false

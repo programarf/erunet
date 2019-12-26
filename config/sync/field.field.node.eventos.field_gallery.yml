@@ -1,0 +1,58 @@
+uuid: 6fc83d5e-a1ad-49bf-b983-202d17a1c65b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.eventos
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: node.eventos.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: eventos
+label: Galería
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery: gallery
+    target_bundles_drag_drop:
+      data:
+        weight: 11
+        enabled: false
+      galleries:
+        weight: 12
+        enabled: false
+      gallery:
+        enabled: true
+        weight: 13
+      general_data_:
+        weight: 14
+        enabled: false
+      links:
+        weight: 15
+        enabled: false
+      links_of_interest:
+        weight: 16
+        enabled: false
+      slides:
+        weight: 17
+        enabled: false
+      slideshow:
+        weight: 18
+        enabled: false
+      video:
+        weight: 19
+        enabled: false
+      videos:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

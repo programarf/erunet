@@ -1,0 +1,8 @@
+uuid: 73db75d2-c175-431b-92a4-11d0ec2dc066
+langcode: es
+status: true
+dependencies: {  }
+name: Proceso
+vid: proceso
+description: 'Proceso asociado a los documentos SIG'
+weight: 0

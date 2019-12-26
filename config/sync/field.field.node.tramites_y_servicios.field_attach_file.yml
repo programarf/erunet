@@ -1,0 +1,27 @@
+uuid: c24399cd-eb0b-4d37-a156-556b7315bcd6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach_file
+    - node.type.tramites_y_servicios
+  module:
+    - file
+id: node.tramites_y_servicios.field_attach_file
+field_name: field_attach_file
+entity_type: node
+bundle: tramites_y_servicios
+label: 'Documento Adjunto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt docx doc pdf xsls xls zip'
+  max_filesize: '2 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

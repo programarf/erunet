@@ -1,0 +1,19 @@
+uuid: 63d950eb-a8ee-46a3-b257-2d169b7788ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.clasificados
+id: node.clasificados.field_location
+field_name: field_location
+entity_type: node
+bundle: clasificados
+label: 'Lugar / Ciudad / Ubicación'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,11 @@
+uuid: 94c95c8d-ec35-43ce-8cb4-80c3f1226708
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.proceso
+id: taxonomy_term.proceso
+target_entity_type_id: taxonomy_term
+target_bundle: proceso
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,66 @@
+uuid: 39c5a2eb-0255-422f-bedd-39b176c8e966
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_clasificacion_del_document
+field_name: field_clasificacion_del_document
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Caracterizaciones
+    -
+      value: '2'
+      label: 'Documentos externos'
+    -
+      value: '3'
+      label: Formatos
+    -
+      value: '4'
+      label: 'Guías o instructivos'
+    -
+      value: '5'
+      label: 'Instrumentos Archivísticos'
+    -
+      value: '6'
+      label: Manuales
+    -
+      value: '7'
+      label: 'Otros documentos'
+    -
+      value: '8'
+      label: Planeación
+    -
+      value: '9'
+      label: Procedimientos
+    -
+      value: '10'
+      label: 'Actas Comité Institucional de Gestión y Desempeño'
+    -
+      value: '11'
+      label: 'Actos Administrativos Generales'
+    -
+      value: '12'
+      label: 'Administración de Riesgos'
+    -
+      value: '13'
+      label: Normograma
+    -
+      value: '14'
+      label: 'Planeación Institucional'
+    -
+      value: '15'
+      label: 'Políticas y Lineamientos Generales'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
