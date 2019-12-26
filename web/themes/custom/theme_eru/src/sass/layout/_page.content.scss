@@ -31,7 +31,6 @@
 		display: flex;
     	justify-content: center;
     	margin: 0 0 3rem;
-    	text-transform: uppercase;
 		a{
 			color: #fff;
 	    	background-color: $blue;
@@ -148,13 +147,11 @@
 				color: #000;
 			}
 		}
-		.views-field-body {
-			display: block !important;
-			margin-top: 1.5em;
-			padding: 10px;
+		.views-field-created {			
+			margin-left: 10px;
 		}
 		.views-field-field-descripcion {
-			padding: 10px;
+			p {margin-left: 10px;}
 		}
 		video {
 			width: 100% !important;

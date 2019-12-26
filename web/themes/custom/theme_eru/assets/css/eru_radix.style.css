@@ -16223,7 +16223,6 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
   margin: 0 0 3rem;
-  text-transform: uppercase;
 }
 .page__content .more-link a {
   color: #fff;
@@ -16343,13 +16342,11 @@ tr:nth-child(even) {
 .page__content .video-home h3 a {
   color: #000;
 }
-.page__content .video-home .views-field-body {
-  display: block !important;
-  margin-top: 1.5em;
-  padding: 10px;
+.page__content .video-home .views-field-created {
+  margin-left: 10px;
 }
-.page__content .video-home .views-field-field-descripcion {
-  padding: 10px;
+.page__content .video-home .views-field-field-descripcion p {
+  margin-left: 10px;
 }
 .page__content .video-home video {
   width: 100% !important;
