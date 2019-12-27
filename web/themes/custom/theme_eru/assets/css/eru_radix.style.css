@@ -16152,6 +16152,10 @@ tr:nth-child(even) {
 #eru-slide .carousel-caption p, #eru-slide .carousel-caption a {
   font-size: 1.2em;
 }
+#eru-slide .carousel-caption .btn-primary, #eru-slide .carousel-caption .btn-primary:hover {
+  background-color: #bd0e73 !important;
+  border-color: #bd0e73 !important;
+}
 #eru-slide .controles {
   display: flex;
   align-items: center;
@@ -16165,7 +16169,7 @@ tr:nth-child(even) {
   color: #fff;
 }
 #eru-slide .controles i:hover {
-  color: #0A6EC8 !important;
+  color: #bd0e73 !important;
 }
 #eru-slide .controles .carousel-control-prev, #eru-slide .controles .carousel-control-next {
   opacity: 1 !important;
@@ -16188,7 +16192,7 @@ tr:nth-child(even) {
 .page__content {
   margin-bottom: 3em;
 }
-.page__content h2 {
+.page__content h2, .page__content .eventos header {
   margin-bottom: 1.5em;
 }
 .page__content img.img-thumbnail {

@@ -95,6 +95,10 @@
 			p, a {
 				font-size: 1.2em;
 			}
+			.btn-primary, .btn-primary:hover {
+				background-color: #bd0e73 !important;
+    			border-color: #bd0e73 !important;
+			}
 		}
 		.controles {
 			display: flex;
@@ -107,7 +111,7 @@
 		    	font-size: 2em;
 		    	color: #fff;
 		    	&:hover{
-		    		color: #0A6EC8 !important;
+		    		color: #bd0e73 !important;
 		    	}
 		    }
 		    .carousel-control-prev, .carousel-control-next{
