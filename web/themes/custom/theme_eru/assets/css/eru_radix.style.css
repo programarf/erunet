@@ -15952,7 +15952,7 @@ p {
   transition: background-color 0.5s;
 }
 
-.page li, .news li, .project-content li {
+.news li, .project-content li {
   font-size: 1.1em;
   margin-bottom: 1.1em;
 }
@@ -16051,7 +16051,8 @@ tr:nth-child(even) {
 /*@import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
 .menu-principal {
-  background-color: #fff !important;
+  background-color: #ededed !important;
+  border-bottom: 1px solid #dedede;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link, .menu-principal a.language-link, .menu-principal .logo a {
   color: #0A6EC8 !important;
