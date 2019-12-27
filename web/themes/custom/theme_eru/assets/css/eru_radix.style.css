@@ -16368,6 +16368,26 @@ tr:nth-child(even) {
 .page__content .eventos {
   padding: 2em;
 }
+.page__content .eventos .row-news {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+}
+.page__content .eventos .fecha_eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__content .eventos .fecha_eventos .dia {
+  font-size: 2em;
+  font-weight: 600;
+  font-style: italic;
+}
+.page__content .eventos .fecha_eventos .mes_ano {
+  background-color: #bd0e73;
+  color: #fff;
+  padding: 5px 10px;
+}
 .page__content .funcionarios .foto-funcionario img {
   border-radius: 50%;
 }

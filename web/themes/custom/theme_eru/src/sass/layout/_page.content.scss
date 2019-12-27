@@ -175,6 +175,26 @@
 	}
 	.eventos {
 		padding: 2em;
+		.row-news {
+			margin-bottom: 1em;
+    		border-bottom: 1px solid #ddd;
+    		padding-bottom: 1em;
+		}
+		.fecha_eventos {
+			display: flex;
+    		flex-direction: column;
+    		align-items: center;
+			.dia {
+				font-size: 2em;
+    			font-weight: 600;
+    			font-style: italic;
+			}
+			.mes_ano {
+				background-color: #bd0e73;
+    			color: #fff;
+    			padding: 5px 10px;
+			}
+		}
 	}
 	.funcionarios {
 		.foto-funcionario {
