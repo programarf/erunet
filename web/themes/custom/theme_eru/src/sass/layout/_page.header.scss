@@ -1,13 +1,11 @@
 // Page: Top Header
 // -----------------------------------------------------------------------------
 .menu-principal {
-	background-color: $bk !important;
-	background-blend-mode: multiply;
-	opacity: 0.9;
+	background-color: #fff !important;	
 	.block--theme-eru-main-menu a.nav-link, a.language-link, .logo a{
-		color: #fff !important;		
+		color: #0A6EC8 !important;		
 		text-transform: uppercase;
-		&:focus { outline: 2px dotted #FFF !important; }
+		&:focus { outline: 2px dotted #0A6EC8 !important; }
 	}
 	.logo {margin-right: 30px;}
 	.navbar-nav {		
@@ -18,7 +16,7 @@
 				display: block;
 				width: 0;
 				height: 2px;
-				background: #fff;
+				background: #0A6EC8;
 				transition: width .3s;
 				border: none;
 			}
@@ -35,7 +33,7 @@
     		white-space: normal;
     	}
     	a:hover, a:focus{
-    		color: #fff;
+    		color: #0A6EC8;
     		text-decoration: none;
     		background-color: $bk;
     	}

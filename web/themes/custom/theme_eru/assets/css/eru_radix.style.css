@@ -16051,16 +16051,14 @@ tr:nth-child(even) {
 /*@import "fonts/fontawesome/scss/solid.scss";
 @import "fonts/fontawesome/scss/brands.scss"; */
 .menu-principal {
-  background-color: #01293D !important;
-  background-blend-mode: multiply;
-  opacity: 0.9;
+  background-color: #fff !important;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link, .menu-principal a.language-link, .menu-principal .logo a {
-  color: #fff !important;
+  color: #0A6EC8 !important;
   text-transform: uppercase;
 }
 .menu-principal .block--theme-eru-main-menu a.nav-link:focus, .menu-principal a.language-link:focus, .menu-principal .logo a:focus {
-  outline: 2px dotted #FFF !important;
+  outline: 2px dotted #0A6EC8 !important;
 }
 .menu-principal .logo {
   margin-right: 30px;
@@ -16073,7 +16071,7 @@ tr:nth-child(even) {
   display: block;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #0A6EC8;
   transition: width 0.3s;
   border: none;
 }
@@ -16090,7 +16088,7 @@ tr:nth-child(even) {
   white-space: normal;
 }
 .menu-principal .dropdown-menu a:hover, .menu-principal .dropdown-menu a:focus {
-  color: #fff;
+  color: #0A6EC8;
   text-decoration: none;
   background-color: #01293D;
 }
