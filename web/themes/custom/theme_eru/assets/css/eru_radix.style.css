@@ -16396,6 +16396,7 @@ tr:nth-child(even) {
 }
 .page__content .funcionarios .funcionario-row {
   padding: 1.5em;
+  height: 230px;
   border: 1px solid #ededed;
 }
 .page__content .funcionarios .funcionario-row .datos {
