@@ -67,10 +67,7 @@
                 {% endif %}
                   {% set img_url = file_url(item['#paragraph'].field_img.entity.uri.value) %}
                   {% set img_alt = item['#paragraph'].field_img.value[0]['alt'] %}
-                  <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}">
-                  <div class="carousel-caption d-none d-md-block">
-                    <span>{{ item['#paragraph'].field_title.value }}</span>
-                  </div>
+                  <img src="{{ img_url }}" class="d-block w-100" alt="{{ img_alt }}">                  
                 </div>
             {% endif %}
           {% endfor %}
