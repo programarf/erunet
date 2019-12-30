@@ -16552,6 +16552,11 @@ tr:nth-child(even) {
   margin: 0 20px;
 }
 
+.videos-eru .video__field-media-video-file {
+  display: flex;
+  justify-content: center;
+}
+
 /** Estilos proyectos**/
 .project__field-infografia {
   display: block;
