@@ -16543,10 +16543,8 @@ tr:nth-child(even) {
 }
 
 .video_data {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 2em;
-  align-items: center;
 }
 .video_data .item_data {
   margin: 0 20px;
