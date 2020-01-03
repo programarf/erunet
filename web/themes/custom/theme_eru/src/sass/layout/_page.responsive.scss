@@ -10,7 +10,7 @@
 @media screen and (max-width: 1200px) {		
 	#eru-slide {		
 		.controles {
-			left: 22%;
+			bottom: 17%;
 		}
 		.carousel-caption {
 			width: 30%;
@@ -93,9 +93,8 @@
 		display: inherit !important;
 	}
 	#eru-slide {		
-		.controles {
-			left: 24%;
-			bottom: 16%;
+		.controles {			
+			bottom: 14%;
 		}
 		.carousel-caption {
 			width: 70%;
@@ -138,7 +137,7 @@
 	}
 	#eru-slide {		
 		.controles {
-			left: 28%;
+			bottom: 13%;
 		}		
 	}
 	.page__content .transparencia-block {
@@ -221,8 +220,7 @@
 			.btn {
 				font-size: 0.8em !important;
 			}  
-			#eru-slide .controles {
-				left: 23%;
+			#eru-slide .controles {				
 				i { font-size: 1.8em !important; } 
 			} 
 		} 

@@ -16159,8 +16159,8 @@ tr:nth-child(even) {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 16%;
-  bottom: 28%;
+  left: 7%;
+  bottom: 20%;
   z-index: 10;
 }
 #eru-slide .controles i {
@@ -16367,6 +16367,10 @@ tr:nth-child(even) {
 }
 .page__content .video-home .more-link a:hover {
   text-decoration: underline;
+}
+.page__content .video-home video {
+  width: 100% !important;
+  height: auto;
 }
 .page__content .eventos {
   padding: 2em;
@@ -16796,7 +16800,7 @@ footer img {
 }
 @media screen and (max-width: 1200px) {
   #eru-slide .controles {
-    left: 22%;
+    bottom: 17%;
   }
   #eru-slide .carousel-caption {
     width: 30%;
@@ -16889,8 +16893,7 @@ footer img {
   }
 
   #eru-slide .controles {
-    left: 24%;
-    bottom: 16%;
+    bottom: 14%;
   }
   #eru-slide .carousel-caption {
     width: 70%;
@@ -16936,7 +16939,7 @@ footer img {
   }
 
   #eru-slide .controles {
-    left: 28%;
+    bottom: 13%;
   }
 
   .page__content .transparencia-block #bkg-transparencia {
@@ -17063,9 +17066,6 @@ footer img {
   }
   .carousel-caption .btn {
     font-size: 0.8em !important;
-  }
-  .carousel-caption #eru-slide .controles {
-    left: 23%;
   }
   .carousel-caption #eru-slide .controles i {
     font-size: 1.8em !important;

@@ -87,11 +87,13 @@
             <div class="carousel-caption">
                <h3>{{ item['#paragraph'].field_title.value }}</h3>
                <p class="d-none d-sm-block"> {{ item['#paragraph'].field_description.value }} </p>
+               {% if item['#paragraph'].field_link.value %}
                <a class="btn btn-primary" href="{{ item['#paragraph'].field_link.0.url}}"
                {% if item['#paragraph'].field_external_link.value == 1 %}
                     target="_blank" class="alert-leave-page"
                     {% endif %}>Leer más <span class="sr-only">sobre {{ item['#paragraph'].field_title.value }}{% if item['#paragraph'].field_external_link.value == 1 %}, Abre en una nueva ventana{% endif %}</span>
                 </a>
+                {% endif %}
             </div>
           </div>
           {% endif %}
