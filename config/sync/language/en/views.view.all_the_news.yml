@@ -10,6 +10,3 @@ display:
           content:
             value: "<div class=\"text-center\">\r\n<h2>noticias</h2>\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</div>\r\n"
             format: full_html
-  block_2:
-    display_options:
-      use_more_text: 'All the news'

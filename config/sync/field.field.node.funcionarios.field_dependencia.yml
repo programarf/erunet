@@ -1,0 +1,29 @@
+uuid: 01f0f5c4-5199-4a34-bfdd-ee7caf5ae552
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dependencia
+    - node.type.funcionarios
+    - taxonomy.vocabulary.dependencia
+id: node.funcionarios.field_dependencia
+field_name: field_dependencia
+entity_type: node
+bundle: funcionarios
+label: Dependencia
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dependencia: dependencia
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

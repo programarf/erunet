@@ -3,15 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.videos_eru.body
+    - field.field.node.videos_eru.field_descripcion
     - field.field.node.videos_eru.field_image_main
     - field.field.node.videos_eru.field_tags
     - field.field.node.videos_eru.field_textual_transcription
-    - field.field.node.videos_eru.field_url_video_yt_
+    - field.field.node.videos_eru.field_videos
     - image.style.thumbnail
     - node.type.videos_eru
   module:
     - image
+    - paragraphs
     - path
     - text
 id: node.videos_eru.default
@@ -19,37 +20,50 @@ targetEntityType: node
 bundle: videos_eru
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 9
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image_main:
+  field_descripcion:
     weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image_main:
+    weight: 9
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  field_url_video_yt_:
-    weight: 10
+  field_videos:
+<<<<<<< HEAD
+    weight: 11
+=======
+    weight: 26
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: videos
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: paragraphs
     region: content
   langcode:
     type: language_select
@@ -94,7 +108,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 11
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }

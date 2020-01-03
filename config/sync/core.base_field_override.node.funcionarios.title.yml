@@ -1,0 +1,18 @@
+uuid: 01d028bc-fd7c-408c-8738-7afd253b89ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.funcionarios
+id: node.funcionarios.title
+field_name: title
+entity_type: node
+bundle: funcionarios
+label: 'Nombre completo'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

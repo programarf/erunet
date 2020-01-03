@@ -1,0 +1,61 @@
+<<<<<<< HEAD:config/sync/field.field.node.clasificados.field_cover_img.yml
+uuid: 44856d11-5289-41b0-98f2-5bf16ab9c811
+=======
+uuid: e89b9455-ba1f-4319-977e-4f947c82d361
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.tramites_y_servicios.field_cover_img.yml
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cover_img
+<<<<<<< HEAD:config/sync/field.field.node.clasificados.field_cover_img.yml
+    - node.type.clasificados
+=======
+    - node.type.tramites_y_servicios
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.tramites_y_servicios.field_cover_img.yml
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+<<<<<<< HEAD:config/sync/field.field.node.clasificados.field_cover_img.yml
+id: node.clasificados.field_cover_img
+field_name: field_cover_img
+entity_type: node
+bundle: clasificados
+label: 'Imagen del clasificado'
+=======
+id: node.tramites_y_servicios.field_cover_img
+field_name: field_cover_img
+entity_type: node
+bundle: tramites_y_servicios
+label: Imagen
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.field.node.tramites_y_servicios.field_cover_img.yml
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

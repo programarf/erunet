@@ -1,0 +1,21 @@
+uuid: df623a92-6824-4004-bdfa-9ebe9a7b6952
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clasificacion_del_document
+    - node.type.documento_sig
+  module:
+    - options
+id: node.documento_sig.field_clasificacion_del_document
+field_name: field_clasificacion_del_document
+entity_type: node
+bundle: documento_sig
+label: 'Clasificación del documento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: c119672e-a764-4cf4-a1eb-7e4912763465
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Clasificados
+type: clasificados
+description: 'Tipo de contenido para crear anuncios para ofertar productos, servicios y asesorías por parte de los funcionarios. '
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

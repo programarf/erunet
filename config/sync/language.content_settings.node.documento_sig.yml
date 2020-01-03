@@ -1,0 +1,11 @@
+uuid: b9f750a7-8d6a-4626-b56e-1f3935a70fd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.documento_sig
+id: node.documento_sig
+target_entity_type_id: node
+target_bundle: documento_sig
+default_langcode: site_default
+language_alterable: false

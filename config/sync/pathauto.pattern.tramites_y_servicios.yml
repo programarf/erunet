@@ -1,0 +1,33 @@
+uuid: 56fd046c-55bb-4bbb-98cd-c287badc85a6
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: tramites_y_servicios
+label: 'Trámites y servicios'
+type: 'canonical_entities:node'
+pattern: 'tramites-servicios/[node:title]'
+selection_criteria:
+  4addbfe1-136e-4b76-928a-fe8e06fdae14:
+    id: node_type
+    bundles:
+      tramites_y_servicios: tramites_y_servicios
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4addbfe1-136e-4b76-928a-fe8e06fdae14
+  bfa6c45a-0101-4031-8b55-85742304b352:
+    id: language
+    langcodes:
+      es: es
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: bfa6c45a-0101-4031-8b55-85742304b352
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

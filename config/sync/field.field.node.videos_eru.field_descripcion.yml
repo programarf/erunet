@@ -1,0 +1,21 @@
+uuid: 8afc2dc4-4a94-432d-949e-ecd608bace34
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion
+    - node.type.videos_eru
+  module:
+    - text
+id: node.videos_eru.field_descripcion
+field_name: field_descripcion
+entity_type: node
+bundle: videos_eru
+label: Descripción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -24,7 +24,7 @@ content:
       controls: true
       multiple_file_display_type: sources
       width: 1000
-      height: 800
+      height: 560
       autoplay: false
       loop: false
       muted: false

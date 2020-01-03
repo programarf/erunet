@@ -3,14 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.videos_eru.body
+    - field.field.node.videos_eru.field_descripcion
     - field.field.node.videos_eru.field_image_main
     - field.field.node.videos_eru.field_tags
     - field.field.node.videos_eru.field_textual_transcription
-    - field.field.node.videos_eru.field_url_video_yt_
+    - field.field.node.videos_eru.field_videos
     - node.type.videos_eru
   module:
     - ds
+    - entity_reference_revisions
+<<<<<<< HEAD
+    - field_formatter_class
+=======
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
     - image
     - link
     - text
@@ -26,14 +31,14 @@ third_party_settings:
     regions:
       contentmain:
         - langcode
-        - body
         - 'dynamic_token_field:node-created'
-        - links
         - field_image_main
-        - field_url_video_yt_
+        - links
         - field_tags
         - addtoany
         - field_textual_transcription
+        - field_videos
+        - field_descripcion
     fields:
       'dynamic_token_field:node-created':
         plugin_id: 'dynamic_token_field:node-created'
@@ -50,13 +55,13 @@ content:
     region: contentmain
     settings: {  }
     third_party_settings: {  }
-  body:
-    type: text_default
-    weight: 0
-    region: contentmain
+  field_descripcion:
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: contentmain
   field_image_main:
     type: image
     weight: 0
@@ -86,15 +91,34 @@ content:
     third_party_settings: {  }
     type: link
     region: contentmain
-  field_url_video_yt_:
-    type: entity_reference_entity_view
-    weight: 1
+  field_videos:
+    weight: 5
+<<<<<<< HEAD
     label: hidden
     settings:
       view_mode: default
-      link: false
-    third_party_settings: {  }
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_revisions_entity_view
     region: contentmain
+=======
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca
   langcode:
     type: language
     weight: 0

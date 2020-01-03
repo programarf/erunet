@@ -1,0 +1,15 @@
+uuid: 6991019a-8eb6-4b38-8236-7390a5a5191e
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_cuadrada_pequena
+label: 'Imagen cuadrada pequeña'
+effects:
+  97b88e80-13e8-42b1-a93b-09a7cd959174:
+    uuid: 97b88e80-13e8-42b1-a93b-09a7cd959174
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      anchor: center-center

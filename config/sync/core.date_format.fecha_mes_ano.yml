@@ -1,0 +1,8 @@
+uuid: a81dfa4d-eafc-46a4-ab3c-faed972145bd
+langcode: es
+status: true
+dependencies: {  }
+id: fecha_mes_ano
+label: 'Fecha MES - AÑO'
+locked: false
+pattern: 'M, Y'

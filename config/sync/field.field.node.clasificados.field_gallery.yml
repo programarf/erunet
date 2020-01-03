@@ -1,0 +1,58 @@
+uuid: e989c099-f8ac-4830-b4b8-2c3930ebe8f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.clasificados
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: node.clasificados.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: clasificados
+label: 'Galería de Imágenes'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery: gallery
+    target_bundles_drag_drop:
+      data:
+        weight: 11
+        enabled: false
+      galleries:
+        weight: 12
+        enabled: false
+      gallery:
+        enabled: true
+        weight: 13
+      general_data_:
+        weight: 14
+        enabled: false
+      links:
+        weight: 15
+        enabled: false
+      links_of_interest:
+        weight: 16
+        enabled: false
+      slides:
+        weight: 17
+        enabled: false
+      slideshow:
+        weight: 18
+        enabled: false
+      video:
+        weight: 19
+        enabled: false
+      videos:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

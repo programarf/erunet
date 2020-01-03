@@ -19,11 +19,12 @@
   {{ title_suffix }}
   <h2{{ title_attributes }}>{{ label }}</h2>
   {% block content %}
-  {{ content.field_url_video_yt_ }}
+  {{ content.field_videos }}
   {{ content.field_tags }}  
   <div class="video_data">
-    <div class="item_data"><b>Fecha de publicación:  </b> {{ node.created.value|format_date('fecha_sitio') }}</div>   
-    <div class="item_data">{{ content.addtoany }}</div>    
+    <div class="item_data"><b>Fecha de publicación:  </b> {{ node.created.value|format_date('fecha_sitio') }}</div>  
+    <div class="item_data">{{ content.addtoany }}</div> 
+    <div class="item_data">{{ content.field_descripcion }}</div>    
     <div class="item_data">{{ content.field_textual_transcription }}</div>
   </div>
 

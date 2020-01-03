@@ -1,0 +1,24 @@
+uuid: e7ef699a-bf24-4901-99fd-078b91daa932
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expedition_date
+    - node.type.documento_sig
+  module:
+    - datetime
+id: node.documento_sig.field_expedition_date
+field_name: field_expedition_date
+entity_type: node
+bundle: documento_sig
+label: 'Fecha de Expedición'
+description: 'Fecha de expedición del documento.'
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

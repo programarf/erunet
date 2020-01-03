@@ -1,0 +1,19 @@
+uuid: 97323e10-b82c-44fc-8567-d7a9d179617a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono_extension
+    - node.type.funcionarios
+id: node.funcionarios.field_telefono_extension
+field_name: field_telefono_extension
+entity_type: node
+bundle: funcionarios
+label: 'Teléfono / Extensión'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

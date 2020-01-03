@@ -1,0 +1,2243 @@
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+uuid: c037451c-988e-4eed-bfb7-fafdefae49d5
+=======
+uuid: e6cee3a8-da7d-4255-827f-e6554164f79b
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+langcode: es
+status: true
+dependencies:
+  config:
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+    - field.storage.node.body
+    - field.storage.node.field_cover_img
+    - field.storage.node.field_fecha
+    - field.storage.node.field_location
+    - image.style.noticias_videos_medios
+    - node.type.clasificados
+    - node.type.eventos
+  module:
+    - datetime
+    - image
+    - node
+    - text
+    - user
+id: eventos_y_clasificados
+label: 'Eventos y Clasificados'
+=======
+    - field.storage.node.field_clasificacion_del_document
+    - field.storage.node.field_expedition_date
+    - field.storage.node.field_file_download
+    - field.storage.node.field_proceso
+    - node.type.documento_sig
+    - taxonomy.vocabulary.proceso
+  content:
+    - 'taxonomy_term:proceso:144c673f-4ea6-4eea-bd5d-d8fff612628f'
+    - 'taxonomy_term:proceso:1972e83c-b7b8-41c3-bf91-fba1d30eeb2f'
+    - 'taxonomy_term:proceso:297792f3-a23e-4180-91e6-b1ba3c76d079'
+    - 'taxonomy_term:proceso:2e2b6e3f-0c80-4eb0-a28e-8018b326e0ea'
+    - 'taxonomy_term:proceso:3f6d8c04-5c77-4146-b68e-e1e3c253a467'
+    - 'taxonomy_term:proceso:42d2043f-ca63-4e84-82d6-3b9e1ab260dc'
+    - 'taxonomy_term:proceso:5f1fde0f-6079-48e5-a7a1-babdb7c499a5'
+    - 'taxonomy_term:proceso:7857a872-db3b-45df-b221-b651505eed10'
+    - 'taxonomy_term:proceso:81b6e386-f974-4049-b846-706b04973a1b'
+    - 'taxonomy_term:proceso:81f67277-cd7b-45db-a917-980251e9ca1e'
+    - 'taxonomy_term:proceso:86f6aa6b-1e0a-4728-8274-afa5325989d9'
+    - 'taxonomy_term:proceso:9e14fd8c-6a6c-4944-988e-c3d7218dbbe8'
+    - 'taxonomy_term:proceso:b251ee5d-ed60-43cc-8f2e-5761397cad28'
+    - 'taxonomy_term:proceso:c5b583c6-a395-427d-9254-44017b5945eb'
+    - 'taxonomy_term:proceso:e074248a-8202-4cbe-a742-e9a6f19cfb6c'
+    - 'taxonomy_term:proceso:e6e66bdc-038a-400a-8f3f-61d98c8b5660'
+    - 'taxonomy_term:proceso:f5bbaef6-12dc-4741-a1c0-92608eecced2'
+    - 'taxonomy_term:proceso:fe7ffd53-075e-484c-84aa-be3f1fb91055'
+  module:
+    - datetime
+    - file
+    - node
+    - options
+    - taxonomy
+    - user
+    - views_bootstrap
+id: documentos
+label: Documentos
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+        type: some
+=======
+        type: mini
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+        options:
+          items_per_page: 4
+          offset: 0
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+=======
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Todo -'
+            offset: false
+            offset_label: Desplazamiento
+          tags:
+            previous: ‹‹
+            next: ››
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 3
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: 'col-12 col-sm-6 col-md-4 views-col mb-5'
+          row_class_default: false
+          row_class_custom: ''
+      row:
+        type: fields
+      fields:
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+        field_fecha:
+          id: field_fecha
+          table: node__field_fecha
+          field: field_fecha
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+=======
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Título
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: 'float-left mr-3'
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: fecha_sitio
+=======
+          type: string
+          settings:
+            link_to_entity: false
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          settings:
+            link_to_entity: true
+          plugin_id: field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+=======
+        field_expedition_date:
+          id: field_expedition_date
+          table: node__field_expedition_date
+          field: field_expedition_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Fecha de Expedición'
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+          type: string
+=======
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: html_year
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+=======
+          plugin_id: field
+        field_proceso:
+          id: field_proceso
+          table: node__field_proceso
+          field: field_proceso
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Proceso
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          exclude: false
+          alter:
+            alter_text: true
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+            max_length: 225
+=======
+            max_length: 0
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+          click_sort_column: summary
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 225
+          group_column: value
+=======
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            eventos: eventos
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      title: Eventos
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+      css_class: 'news-home home'
+      use_more: false
+      use_more_always: true
+      use_more_text: 'IR A CLASIFICADOS'
+      use_ajax: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_fecha'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Eventos
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      fields:
+        field_fecha_1:
+          id: field_fecha_1
+          table: node__field_fecha
+          field: field_fecha
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+=======
+        field_clasificacion_del_document:
+          id: field_clasificacion_del_document
+          table: node__field_clasificacion_del_document
+          field: field_clasificacion_del_document
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Clasificación del documento'
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: dia
+=======
+          type: list_default
+          settings: {  }
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+        field_fecha:
+          id: field_fecha
+          table: node__field_fecha
+          field: field_fecha
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: 'float-left mr-3'
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: fecha_mes_ano
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          settings:
+            link_to_entity: true
+          plugin_id: field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+=======
+        field_file_download:
+          id: field_file_download
+          table: node__field_file_download
+          field: field_file_download
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Documento Adjunto'
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 225
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: summary
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 225
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      defaults:
+        fields: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        style: false
+        row: false
+      use_more: false
+      use_more_always: true
+      use_more_text: 'IR A CLASIFICADOS'
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 1
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: ''
+          row_class_default: false
+          row_class_custom: ''
+      row:
+        type: fields
+        options: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_fecha'
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: Clasificados
+    position: 2
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: Clasificados
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        fields: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+        pager: false
+        style: false
+        row: false
+=======
+          plugin_id: field
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+=======
+          value:
+            documento_sig: documento_sig
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: word
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Contiene las palabras'
+            description: ''
+            use_operator: false
+            operator: title_op
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+        field_proceso_target_id:
+          id: field_proceso_target_id
+          table: node__field_proceso
+          field: field_proceso_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_proceso_target_id_op
+            label: Proceso
+            description: ''
+            use_operator: false
+            operator: field_proceso_target_id_op
+            identifier: field_proceso_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: proceso
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_clasificacion_del_document_value:
+          id: field_clasificacion_del_document_value
+          table: node__field_clasificacion_del_document
+          field: field_clasificacion_del_document_value
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+            clasificados: clasificados
+=======
+            all: all
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          group: 1
+          exposed: false
+          expose:
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+=======
+            operator_id: field_clasificacion_del_document_value_op
+            label: 'Tipo de documento'
+            description: ''
+            use_operator: false
+            operator: field_clasificacion_del_document_value_op
+            identifier: field_clasificacion_del_document_value
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+=======
+          reduce_duplicates: false
+          plugin_id: list_field
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      title: mipg
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div  class=\"text-center\">\r\n<h2>Modelo Integrado de Planeación y Gestión - MIPG</h2>\r\n</div>\r\n<p>Marco de referencia para dirigir, planear, ejecutar, hacer seguimiento, evaluar y controlar la gestión de las entidades públicas con el fin de generar resultados que atiendan a los planes de desarrollo y que resuelvan las necesidades y problemas de los ciudadanos generando valor en lo público</p>\r\n<h3 id=\"titulo-busqueda\">Búsqueda</h3>"
+            format: full_html
+          plugin_id: text
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      css_class: home
+      use_ajax: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_clasificacion_del_document'
+        - 'config:field.storage.node.field_expedition_date'
+        - 'config:field.storage.node.field_file_download'
+        - 'config:field.storage.node.field_proceso'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: MIPG
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: mipg
+      display_description: ''
+      title: MIPG
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            documento_sig: documento_sig
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: word
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Contiene las palabras'
+            description: ''
+            use_operator: false
+            operator: title_op
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+        field_proceso_target_id:
+          id: field_proceso_target_id
+          table: node__field_proceso
+          field: field_proceso_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value:
+            153: 153
+            154: 154
+            155: 155
+            156: 156
+            158: 158
+            159: 159
+            160: 160
+            161: 161
+            162: 162
+            163: 163
+            164: 164
+            165: 165
+            166: 166
+            167: 167
+            168: 168
+            169: 169
+            170: 170
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_proceso_target_id_op
+            label: Proceso
+            description: ''
+            use_operator: false
+            operator: field_proceso_target_id_op
+            identifier: field_proceso_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: proceso
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_clasificacion_del_document_value:
+          id: field_clasificacion_del_document_value
+          table: node__field_clasificacion_del_document
+          field: field_clasificacion_del_document_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value:
+            1: '1'
+            2: '2'
+            3: '3'
+            4: '4'
+            5: '5'
+            6: '6'
+            7: '7'
+            8: '8'
+            9: '9'
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_clasificacion_del_document_value_op
+            label: 'Tipo de documento'
+            description: ''
+            use_operator: false
+            operator: field_clasificacion_del_document_value_op
+            identifier: field_clasificacion_del_document_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_proceso_target_id_1:
+          id: field_proceso_target_id_1
+          table: node__field_proceso
+          field: field_proceso_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            153: 153
+            154: 154
+            155: 155
+            156: 156
+            158: 158
+            159: 159
+            160: 160
+            161: 161
+            162: 162
+            163: 163
+            164: 164
+            165: 165
+            166: 166
+            167: 167
+            168: 168
+            169: 169
+            170: 170
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: proceso
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+      fields:
+        field_cover_img:
+          id: field_cover_img
+          table: node__field_cover_img
+          field: field_cover_img
+=======
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_clasificacion_del_document'
+        - 'config:field.storage.node.field_expedition_date'
+        - 'config:field.storage.node.field_file_download'
+        - 'config:field.storage.node.field_proceso'
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'Mapa de procesos'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      path: mipg/mapa-procesos
+      header: {  }
+      defaults:
+        header: false
+        fields: false
+        style: false
+        row: false
+        footer: false
+        filters: false
+        filter_groups: false
+        title: false
+      fields:
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div  class=\"text-center\">\r\n<h2>Modelo Integrado de Planeación y Gestión - MIPG</h2>\r\n</div>\r\n<p>Marco de referencia para dirigir, planear, ejecutar, hacer seguimiento, evaluar y controlar la gestión de las entidades públicas con el fin de generar resultados que atiendan a los planes de desarrollo y que resuelvan las necesidades y problemas de los ciudadanos generando valor en lo público</p>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: noticias_videos_medios
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          settings:
+            link_to_entity: true
+          plugin_id: field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_location:
+          id: field_location
+          table: node__field_location
+          field: field_location
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 225
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: summary
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 225
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      use_more: true
+      use_more_always: true
+      use_more_text: 'IR A CLASIFICADOS'
+      link_display: page_1
+      link_url: ''
+      pager:
+        type: some
+        options:
+          items_per_page: 1
+          offset: 0
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 1
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: ''
+          row_class_default: false
+          row_class_custom: ''
+      row:
+        type: fields
+        options: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_cover_img'
+        - 'config:field.storage.node.field_location'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: 'Todos los clasificados'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: Clasificados
+      defaults:
+        title: false
+        pager: false
+        filters: false
+        filter_groups: false
+        fields: false
+        header: false
+        css_class: false
+      pager:
+        type: full
+        options:
+          items_per_page: 6
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Anterior'
+            next: 'Siguiente >'
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Todo -'
+            offset: false
+            offset_label: Desplazamiento
+          quantity: 9
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            clasificados: clasificados
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+=======
+          hide_alter_empty: false
+          plugin_id: custom
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<section class=\"text-center\">\t\r\n<img src=\"http://186.154.195.124/sites/all/themes/govi_tema/assets/imagenes/intranet/mapa-procesos/mipg_mapa_procesos.jpg\" usemap=\"#procesos\" alt=\" \">\r\n<map name=\"procesos\" id=\"procesos\">\r\n<area href=\"http://186.154.195.124/sites/all/themes/govi_tema/assets/imagenes/intranet/Mapalideres28.06.2019.jpg\" shape=\"rect\" coords=\"10,15,205,41\" alt=\"Lideres de Proceso y Operativos\">\r\n<area href=\"http://186.154.195.124/mipg/direccionamiento-estrategico\" shape=\"rect\" coords=\"375,26,507,81\" alt=\"Direcciónamiento Estratégico\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-de-grupos-de-interes\" shape=\"rect\" coords=\"525,26,658,81\" alt=\"Gestión de Grupos de Interés\">\r\n<area href=\"http://186.154.195.124/mipg/formulacion-instrumentos\" shape=\"rect\" coords=\"159,229,295,301\" alt=\"Formulación de Instrumentos\">\r\n<area href=\"http://186.154.195.124/mipg/evaluacion-financiera-de-proyectos\" shape=\"rect\" coords=\"301,229,437,301\" alt=\"Evaluación Financiera de Proyectos\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-predial-y-social\" shape=\"rect\" coords=\"444,229,580,301\" alt=\"Gestión Predial y Social\">\r\n<area href=\"http://186.154.195.124/mipg/ejecucion-de-proyectos\" shape=\"rect\" coords=\"586,229,722,301\" alt=\"Ejecución de Proyectos\">\r\n<area href=\"http://186.154.195.124/mipg/comercializacion\" shape=\"rect\" coords=\"728,229,864,301\" alt=\"Comercialización\">\r\n<area href=\"http://186.154.195.124/mipg/direccion-gestion-y-seguimiento-de-proyectos\" shape=\"rect\" coords=\"165,319,865,359\" alt=\"Dirección, Gestión y Seguimiento de Proyectos\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-juridica-y-contractual\" shape=\"circle\" coords=\"206,417,43\" alt=\"Gestión Juridica y Contractual\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-financiera\" shape=\"circle\" coords=\"294,417,43\" alt=\"Gestión Financiera\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-de-talento\" shape=\"circle\" coords=\"382,417,43\" alt=\"Gestión de Talento Humano\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-ambiental\" shape=\"circle\" coords=\"470,417,43\" alt=\"Gestión Ambiental\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-de-servicios-logisticos\" shape=\"circle\" coords=\"558,417,43\" alt=\"Gestión de Servicios Logísticos\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-documental\" shape=\"circle\" coords=\"646,417,43\" alt=\"Gestión Documental\">\r\n<area href=\"http://186.154.195.124/mipg/gestion-de-tic\" shape=\"circle\" coords=\"734,417,43\" alt=\"Gestión de TIC\">\r\n<area href=\"http://186.154.195.124/mipg/atencion-al-ciudadano\" shape=\"circle\" coords=\"822,417,43\" alt=\"Atención al Ciudadano\">\r\n<area href=\"http://186.154.195.124/mipg/evaluacion-y-seguimiento\" shape=\"rect\" coords=\"133,525,900,567\" alt=\"Evaluación y Seguimiento\">\r\n<area href=\"http://186.154.195.124/mipg/planeacion-institucional\" shape=\"rect\" coords=\"168,585,335,657\" alt=\"Planeación Institucional\">\r\n<area href=\"http://186.154.195.124/mipg/administracion-riesgos\" shape=\"rect\" coords=\"344,585,511,657\" alt=\"Administración de Riesgos\">\r\n<area href=\"http://186.154.195.124/mipg/politicas-y-lineamientos-generales\" shape=\"rect\" coords=\"519,585,686,657\" alt=\"Políticas y Lineamientos Generales\">\r\n<area href=\"http://186.154.195.124/mipg/actas-comite-institucional-de-gestion-y-desempeno\" shape=\"rect\" coords=\"693,585,861,657\" alt=\"Actas Comité Institucional de Gestión y Desempeño\">\r\n<area href=\"http://186.154.195.124/mipg/normograma\" shape=\"rect\" coords=\"254,665,421,736\" alt=\"Normograma\">\r\n<area href=\"http://186.154.195.124/mipg/actos-administrativos-generales\" shape=\"rect\" coords=\"606,665,773,736\" alt=\"Actos Administrativos Generales\">\r\n\r\n</map>\r\n        </section>"
+            format: full_html
+          plugin_id: text
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            documento_sig: documento_sig
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      title: 'Mapa de Procesos'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_3:
+    display_plugin: page
+    id: page_3
+    display_title: 'Documentos Transversales'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            documento_sig: documento_sig
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: word
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Contiene las palabras'
+            description: ''
+            use_operator: false
+            operator: title_op
+            identifier: title
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+            reduce: false
+=======
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+          entity_field: type
+          plugin_id: bundle
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      fields:
+        field_cover_img:
+          id: field_cover_img
+          table: node__field_cover_img
+          field: field_cover_img
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: noticias_videos_medios
+            image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: h3
+          element_class: title-one
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_location:
+          id: field_location
+          table: node__field_location
+          field: field_location
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: fecha_sitio
+            custom_date_format: ''
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: created
+          plugin_id: field
+      path: clasificados
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"text-center\">\r\n<h2>Clasificados</h2>\r\n</div>"
+            format: full_html
+          plugin_id: text
+      css_class: 'news-home all-news home'
+=======
+          entity_field: title
+          plugin_id: string
+        field_proceso_target_id:
+          id: field_proceso_target_id
+          table: node__field_proceso
+          field: field_proceso_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            157: 157
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_proceso_target_id_op
+            label: Proceso
+            description: ''
+            use_operator: false
+            operator: field_proceso_target_id_op
+            identifier: field_proceso_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: proceso
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_clasificacion_del_document_value:
+          id: field_clasificacion_del_document_value
+          table: node__field_clasificacion_del_document
+          field: field_clasificacion_del_document_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value:
+            10: '10'
+            11: '11'
+            12: '12'
+            13: '13'
+            14: '14'
+            15: '15'
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_clasificacion_del_document_value_op
+            label: 'Tipo de documento'
+            description: ''
+            use_operator: false
+            operator: field_clasificacion_del_document_value_op
+            identifier: field_clasificacion_del_document_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      defaults:
+        filters: false
+        filter_groups: false
+        empty: false
+        title: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      path: mipg/documentos_transversales
+      empty:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          content: 'Mostrando @start - @end de @total'
+          plugin_id: result
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No hay resultados'
+            format: basic_html
+          plugin_id: text
+      title: 'Documentos Transversales'
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+<<<<<<< HEAD:config/sync/views.view.eventos_y_clasificados.yml
+        - 'config:field.storage.node.field_cover_img'
+        - 'config:field.storage.node.field_location'
+=======
+        - 'config:field.storage.node.field_clasificacion_del_document'
+        - 'config:field.storage.node.field_expedition_date'
+        - 'config:field.storage.node.field_file_download'
+        - 'config:field.storage.node.field_proceso'
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/views.view.documentos.yml

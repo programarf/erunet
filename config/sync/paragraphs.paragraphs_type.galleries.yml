@@ -3,7 +3,7 @@ langcode: es
 status: true
 dependencies: {  }
 id: galleries
-label: Galleries
+label: Imagen
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

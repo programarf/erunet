@@ -1,0 +1,22 @@
+uuid: 1aa3139d-d581-41db-8d35-521b20abc47c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.documento_sig
+  module:
+    - text
+id: node.documento_sig.body
+field_name: body
+entity_type: node
+bundle: documento_sig
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

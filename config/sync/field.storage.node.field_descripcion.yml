@@ -1,0 +1,32 @@
+<<<<<<< HEAD:config/sync/field.storage.node.field_descripcion.yml
+uuid: f17c4a28-65af-4ed9-bf26-37437f91a3c8
+=======
+uuid: 5cdbe29e-cb4f-4132-9f87-e83784842599
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.storage.node.field_correo_institucional.yml
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+<<<<<<< HEAD:config/sync/field.storage.node.field_descripcion.yml
+    - text
+id: node.field_descripcion
+field_name: field_descripcion
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+=======
+id: node.field_correo_institucional
+field_name: field_correo_institucional
+entity_type: node
+type: email
+settings: {  }
+module: core
+>>>>>>> a9682ab042b6bb3bdb8f32bd58f920406088c2ca:config/sync/field.storage.node.field_correo_institucional.yml
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

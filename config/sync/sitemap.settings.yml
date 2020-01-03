@@ -4,24 +4,25 @@ message:
   value: ''
   format: restricted_html
 show_front: false
-show_titles: false
+show_titles: true
 show_books: {  }
 books_expanded: true
 show_menus:
   main: main
-  secondary-menu: secondary-menu
   account: '0'
   admin: '0'
   devel: '0'
   footer: '0'
+  secondary-menu: '0'
   social-media: '0'
   tools: '0'
+  transparencia: '0'
 show_menus_hidden: false
 show_vocabularies:
-  tags_of_news: tags_of_news
   tabs_in_media: '0'
   tabs_in_project: '0'
   tags: '0'
+  tags_of_news: '0'
   type_of_project: '0'
 show_description: true
 show_count: true
@@ -48,5 +49,6 @@ order:
   vocabularies_tags: -50
   vocabularies_tags_of_news: -50
   vocabularies_type_of_project: -50
+  menus_transparencia: -50
 _core:
   default_config_hash: f4sH8CGbEMFQXKFoGeaHbmIP_f6cOTi02EeFhHSbYyo

@@ -8,27 +8,12 @@ h3, h4, h5, h6 {
 	font-family: $poppins;
 	margin-bottom: 1em;
 }
-.home h2, .container-project h2{
+h2, .eventos header{
 	font-weight: 900;
-	text-transform: uppercase;
 	text-align: center;	
 	line-height: 1.5;
-	font-size: 1.8em;
-	&::after{
-		content: "";
-	    width: 40px;
-	    height: 52px;
-	    border-bottom: 2px solid #0A6EC8;
-	    position: absolute;
-	    left: 49%;
-	}
-}
-h2{	
-	font-weight: 900;
-	text-transform: none;
-	text-align: left;
-	line-height: 1.5;
-	font-size: 1.8em;
+	font-size: 1.8em;	
+	color: #003250;
 }
 h3, #titulo-busqueda{
 	font-size: 1.4em;
@@ -105,7 +90,7 @@ ul,
 dl {
 
 }
-.page li, .news li, .project-content li {
+.news li, .project-content li {
 	font-size: 1.1em; 
 	margin-bottom: 1.1em;
 }
