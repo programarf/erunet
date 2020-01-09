@@ -6,6 +6,7 @@
 	.block--theme-eru-main-menu a.nav-link, a.language-link, .logo a{
 		color: #0A6EC8 !important;		
 		text-transform: uppercase;
+		font-weight: 600;
 		&:focus { outline: 2px dotted #0A6EC8 !important; }
 	}
 	.logo {margin-right: 30px;}

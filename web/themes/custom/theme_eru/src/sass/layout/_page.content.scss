@@ -30,7 +30,7 @@
 	.more-link {
 		display: flex;
     	justify-content: center;
-    	margin: 0 0 3rem;
+    	margin: 1rem 0;
 		a{
 			color: #fff;
 	    	background-color: $blue;
@@ -98,7 +98,7 @@
 		}
 		.title-one {
 			margin: 20px 0 20px 0;
-			height: 60px;			
+			height: 85px;			
 			&::after {
 				content: "";
 				width: 40px;
@@ -151,31 +151,18 @@
 			margin-left: 10px;
 		}
 		.views-field-field-descripcion {
-			p {margin-left: 10px;}
+			p {margin: 10px;}
+			a {
+				margin: 10px;
+				font-weight: 600;
+				display: block;
+				text-align: right;
+			}
 		}
 		video {
 			width: 100% !important;
 			height: auto !important;
 		}
-		.more-link
-		{
-			justify-content: flex-end !important; 
-			margin: 0 0 1rem;
-			a, a:hover{
-				color: #0A6EC8;
-				background: #fff;
-				border-color: #fff;
-				font-weight: 500;				
-			}
-			a:hover {
-				text-decoration: underline;
-			}
-		}
-		video {
-			width: 100% !important;
-			height: auto;
-		}
-
 	}
 	.eventos {
 		padding: 2em;
@@ -200,7 +187,12 @@
 			}
 		}
 	}
+	.clasificados {
+		padding: 2em 1em 1em;
+		height: 605px;
+	}
 	.funcionarios {
+		height: 629px;
 		.foto-funcionario {
 			img {
 				border-radius: 50%;

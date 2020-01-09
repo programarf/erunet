@@ -20,7 +20,7 @@ h3, #titulo-busqueda{
 	border-bottom: 1px #ddd solid;
 	padding: 0.3em;
 	position: relative;
-	margin-bottom: 1em;
+	margin-bottom: inherit;
 	line-height: 1.2 !important;
 	&::after {
 		content: "";
