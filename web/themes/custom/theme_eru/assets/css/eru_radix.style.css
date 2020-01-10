@@ -16477,11 +16477,19 @@ tr:nth-child(even) {
 }
 .page__content .link-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
-.page__content .link-item i {
+.page__content .link-item a {
+  color: #212529 !important;
+  padding: 10px 0 10px 0;
+}
+.page__content .link-item a:hover {
+  background-color: #ededed;
+  text-decoration: none;
+  border-bottom: 2px solid #bd0e73;
+}
+.page__content .link-item .fas, .page__content .link-item .menu-secundario .nav .accesibilidad, .menu-secundario .nav .page__content .link-item .accesibilidad, .page__content .link-item .menu-secundario .nav .opciones, .menu-secundario .nav .page__content .link-item .opciones, .page__content .link-item .address-ico, .page__content .link-item .phone-ico, .page__content .link-item .mail-ico, .page__content .link-item .horario-ico, .page__content .link-item .site-map, .page__content .link-item .tag-ico, .page__content .link-item .descargar-ico, .page__content .link-item .link-ico, .page__content .link-item .icon-lists, .page__content .link-item .breadcrumb-item + .breadcrumb-item::before {
   padding: 44px;
 }
 .page__content .link-item .fa-one-class {
@@ -16512,7 +16520,11 @@ tr:nth-child(even) {
   text-align: center;
   margin-top: 1rem;
 }
+.page__content .link-item .description:hover {
+  text-decoration: none !important;
+}
 .page__content .link-item .title {
+  display: block;
   text-transform: uppercase;
   color: #000;
   font-weight: bold;
