@@ -12,7 +12,7 @@
       window.onload = function () {
         jQuery('.carousel').carousel('dispose');
         jQuery('.carousel').carousel({
-          interval: 5000,
+          interval: 7000,
           keyboard: true,
           touch: true,
           pause: 'false',
