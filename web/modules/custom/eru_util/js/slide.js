@@ -18,7 +18,7 @@
           pause: 'false',
           ride: false,
         });
-        jQuery('.carousel').carousel('pause');
+/*        jQuery('.carousel').carousel('pause');*/
       };
 
       jQuery('#playButton').click(function () {
